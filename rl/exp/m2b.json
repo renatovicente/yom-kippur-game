@@ -1,0 +1,67 @@
+{
+ "n": 300,
+ "seed0": 7000000,
+ "atacantes": {
+  "H0 heur padrão": {
+   "tipo": "heur"
+  },
+  "H1 heur sem exp": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": false
+   }
+  },
+  "HC heur CEM": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": false,
+    "dist": 4.4594342991494536,
+    "alvo": 74.57465533065081,
+    "ev": 56.52531484995036,
+    "apoioEngaja": 82.52707527061918,
+    "exposicao": 36.0798827542647,
+    "expRazao": 1.6011904318032442,
+    "terreno": 3.014059182622595,
+    "ponteInimigo": 1.255062034499016,
+    "ponteEng": 0.019645145808569388,
+    "ponteObj": 0.3196408058381411,
+    "guardaPonte": 0.2312790393270731
+   }
+  },
+  "NA MLP Fase A": {
+   "tipo": "neural",
+   "modelo": "web/models/ISR.json"
+  },
+  "N3 MLP re-treinado": {
+   "tipo": "neural",
+   "modelo": "web/models/ISR_v3.json"
+  },
+  "P3 PUCT re-treinado (união)": {
+   "tipo": "puct",
+   "valor": "web/models/ISR_v3.json",
+   "sims": 24,
+   "prof": 3,
+   "prior": "uniao"
+  }
+ },
+ "defensores": {
+  "DC heur CEM": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": true,
+    "dist": 3.1296368414982823,
+    "alvo": 84.33868508612177,
+    "ev": 57.39786406576046,
+    "apoioEngaja": 113.30681066049893,
+    "exposicao": 36.96287238972081,
+    "expRazao": 1.574982349569909,
+    "terreno": 4.19768881084986,
+    "cacaRaio": 10.065679502108278
+   }
+  }
+ },
+ "nPar": {
+  "P3 PUCT re-treinado (união)|DC heur CEM": 60
+ },
+ "saida": "rl/exp/m2b_res.json"
+}

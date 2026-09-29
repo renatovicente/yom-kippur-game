@@ -1,0 +1,276 @@
+{
+ "cfg": {
+  "n": 300,
+  "seed0": 7000000,
+  "atacantes": {
+   "H0 heur padrão": {
+    "tipo": "heur"
+   },
+   "H1 heur sem exp": {
+    "tipo": "heur",
+    "pesos": {
+     "expectimax": false
+    }
+   },
+   "HC heur CEM": {
+    "tipo": "heur",
+    "pesos": {
+     "expectimax": false,
+     "dist": 4.4594342991494536,
+     "alvo": 74.57465533065081,
+     "ev": 56.52531484995036,
+     "apoioEngaja": 82.52707527061918,
+     "exposicao": 36.0798827542647,
+     "expRazao": 1.6011904318032442,
+     "terreno": 3.014059182622595,
+     "ponteInimigo": 1.255062034499016,
+     "ponteEng": 0.019645145808569388,
+     "ponteObj": 0.3196408058381411,
+     "guardaPonte": 0.2312790393270731
+    }
+   },
+   "NA MLP Fase A": {
+    "tipo": "neural",
+    "modelo": "web/models/ISR.json"
+   },
+   "N3 MLP re-treinado": {
+    "tipo": "neural",
+    "modelo": "web/models/ISR_v3.json"
+   },
+   "P3 PUCT re-treinado (união)": {
+    "tipo": "puct",
+    "valor": "web/models/ISR_v3.json",
+    "sims": 24,
+    "prof": 3,
+    "prior": "uniao"
+   }
+  },
+  "defensores": {
+   "DC heur CEM": {
+    "tipo": "heur",
+    "pesos": {
+     "expectimax": true,
+     "dist": 3.1296368414982823,
+     "alvo": 84.33868508612177,
+     "ev": 57.39786406576046,
+     "apoioEngaja": 113.30681066049893,
+     "exposicao": 36.96287238972081,
+     "expRazao": 1.574982349569909,
+     "terreno": 4.19768881084986,
+     "cacaRaio": 10.065679502108278
+    }
+   }
+  },
+  "nPar": {
+   "P3 PUCT re-treinado (união)|DC heur CEM": 60
+  },
+  "saida": "rl/exp/m2b_res.json"
+ },
+ "tabela": {
+  "H0 heur padrão|DC heur CEM": {
+   "n": 300,
+   "isrW": 48,
+   "egyW": 252,
+   "isr": [
+    0.16,
+    0.12285294152977377,
+    0.20574459086868646
+   ],
+   "egy": [
+    0.84,
+    0.7942554091313135,
+    0.8771470584702262
+   ],
+   "scoreISR": -0.7236666666666668,
+   "tipos": {
+    "decisiva EGY": 238,
+    "marginal ISR": 18,
+    "decisiva ISR": 11,
+    "marginal EGY": 5,
+    "parcial EGY": 9,
+    "parcial ISR": 19
+   },
+   "ponte": 0.3433333333333333,
+   "ponteViva": 0.16,
+   "oeste0": 0.7266666666666667,
+   "oeste": 1.66,
+   "perdasISR": 2.763333333333333,
+   "perdasEGY": 4.253333333333333,
+   "obj": 0.31
+  },
+  "H1 heur sem exp|DC heur CEM": {
+   "n": 300,
+   "isrW": 63,
+   "egyW": 237,
+   "isr": [
+    0.21,
+    0.16772109488365303,
+    0.25961209451503364
+   ],
+   "egy": [
+    0.79,
+    0.7403879054849664,
+    0.832278905116347
+   ],
+   "scoreISR": -0.65,
+   "tipos": {
+    "decisiva EGY": 222,
+    "marginal ISR": 20,
+    "parcial ISR": 34,
+    "parcial EGY": 13,
+    "decisiva ISR": 9,
+    "marginal EGY": 2
+   },
+   "ponte": 0.3933333333333333,
+   "ponteViva": 0.18333333333333332,
+   "oeste0": 0.6566666666666666,
+   "oeste": 2.19,
+   "perdasISR": 2.8466666666666667,
+   "perdasEGY": 3.0866666666666664,
+   "obj": 0.39
+  },
+  "HC heur CEM|DC heur CEM": {
+   "n": 300,
+   "isrW": 190,
+   "egyW": 110,
+   "isr": [
+    0.6333333333333333,
+    0.5774356684994387,
+    0.6858594168344984
+   ],
+   "egy": [
+    0.36666666666666664,
+    0.3141405831655016,
+    0.4225643315005612
+   ],
+   "scoreISR": 0.04833333333333345,
+   "tipos": {
+    "parcial ISR": 118,
+    "parcial EGY": 54,
+    "marginal ISR": 58,
+    "marginal EGY": 1,
+    "decisiva EGY": 55,
+    "decisiva ISR": 14
+   },
+   "ponte": 0.8,
+   "ponteViva": 0.06333333333333334,
+   "oeste0": 0.21,
+   "oeste": 5.8566666666666665,
+   "perdasISR": 3.4266666666666667,
+   "perdasEGY": 4.68,
+   "obj": 1.2466666666666666
+  },
+  "NA MLP Fase A|DC heur CEM": {
+   "n": 300,
+   "isrW": 1,
+   "egyW": 299,
+   "isr": [
+    0.0033333333333333335,
+    0.0005886425761407379,
+    0.018637164554943353
+   ],
+   "egy": [
+    0.9966666666666667,
+    0.9813628354450568,
+    0.9994113574238592
+   ],
+   "scoreISR": -0.9870000000000001,
+   "tipos": {
+    "decisiva EGY": 294,
+    "parcial EGY": 3,
+    "marginal ISR": 1,
+    "marginal EGY": 2
+   },
+   "ponte": 0.4633333333333333,
+   "ponteViva": 0.08,
+   "oeste0": 0.82,
+   "oeste": 0.31333333333333335,
+   "perdasISR": 4.08,
+   "perdasEGY": 1.8433333333333333,
+   "obj": 0.0033333333333333335
+  },
+  "N3 MLP re-treinado|DC heur CEM": {
+   "n": 300,
+   "isrW": 0,
+   "egyW": 300,
+   "isr": [
+    0,
+    0,
+    0.012643429997735661
+   ],
+   "egy": [
+    1,
+    0.9873565700022643,
+    0.9999999999999999
+   ],
+   "scoreISR": -1,
+   "tipos": {
+    "decisiva EGY": 300
+   },
+   "ponte": 0.5733333333333334,
+   "ponteViva": 0.05333333333333334,
+   "oeste0": 0.7533333333333333,
+   "oeste": 0.3466666666666667,
+   "perdasISR": 5.456666666666667,
+   "perdasEGY": 2.34,
+   "obj": 0.0033333333333333335
+  },
+  "P3 PUCT re-treinado (união)|DC heur CEM": {
+   "n": 60,
+   "isrW": 29,
+   "egyW": 31,
+   "isr": [
+    0.48333333333333334,
+    0.3617484128577001,
+    0.6069240514915643
+   ],
+   "egy": [
+    0.5166666666666667,
+    0.39307594850843575,
+    0.6382515871422999
+   ],
+   "scoreISR": -0.2416666666666666,
+   "tipos": {
+    "decisiva EGY": 22,
+    "parcial ISR": 10,
+    "marginal ISR": 19,
+    "marginal EGY": 4,
+    "parcial EGY": 5
+   },
+   "ponte": 1,
+   "ponteViva": 0.13333333333333333,
+   "oeste0": 0.11666666666666667,
+   "oeste": 5.833333333333333,
+   "perdasISR": 5.05,
+   "perdasEGY": 6.916666666666667,
+   "obj": 0.75
+  }
+ },
+ "nash": {
+  "valor": 0.6299772866185089,
+  "pIsr": [
+   0.001289164291048745,
+   0.0015170624634028207,
+   0.9886425637135089,
+   0.000855371856001827,
+   0.0008490191452453038,
+   0.006846818530794899
+  ],
+  "pEgy": [
+   1
+  ],
+  "explorIsr": 0.0033560467148243678,
+  "explorEgy": 0
+ },
+ "atqs": [
+  "H0 heur padrão",
+  "H1 heur sem exp",
+  "HC heur CEM",
+  "NA MLP Fase A",
+  "N3 MLP re-treinado",
+  "P3 PUCT re-treinado (união)"
+ ],
+ "defs": [
+  "DC heur CEM"
+ ]
+}

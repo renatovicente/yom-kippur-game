@@ -1,0 +1,110 @@
+{
+ "cfg": {
+  "n": 200,
+  "seed0": 6000000,
+  "atacantes": {
+   "PUCT selfplay, prior política": {
+    "tipo": "puct",
+    "valor": "web/models/ISR_selfplay.json",
+    "sims": 48,
+    "prof": 4,
+    "prior": "politica"
+   },
+   "PUCT selfplay, prior união": {
+    "tipo": "puct",
+    "valor": "web/models/ISR_selfplay.json",
+    "sims": 48,
+    "prof": 4,
+    "prior": "uniao"
+   }
+  },
+  "defensores": {
+   "heurística padrão": {
+    "tipo": "heur"
+   }
+  },
+  "saida": "rl/exp/m1_puct_candidatos_res.json"
+ },
+ "tabela": {
+  "PUCT selfplay, prior política|heurística padrão": {
+   "n": 200,
+   "isrW": 47,
+   "egyW": 153,
+   "isr": [
+    0.235,
+    0.18157345326946356,
+    0.29841492986724655
+   ],
+   "egy": [
+    0.765,
+    0.7015850701327535,
+    0.8184265467305365
+   ],
+   "scoreISR": -0.6385000000000004,
+   "tipos": {
+    "decisiva EGY": 137,
+    "marginal ISR": 45,
+    "marginal EGY": 14,
+    "parcial EGY": 2,
+    "parcial ISR": 2
+   },
+   "ponte": 0.86,
+   "ponteViva": 0.04,
+   "oeste0": 0.475,
+   "oeste": 3.115,
+   "perdasISR": 5.53,
+   "perdasEGY": 3.195,
+   "obj": 0.305
+  },
+  "PUCT selfplay, prior união|heurística padrão": {
+   "n": 200,
+   "isrW": 110,
+   "egyW": 90,
+   "isr": [
+    0.55,
+    0.48075488574571107,
+    0.6173605136624569
+   ],
+   "egy": [
+    0.45,
+    0.38263948633754313,
+    0.519245114254289
+   ],
+   "scoreISR": -0.16499999999999987,
+   "tipos": {
+    "marginal ISR": 73,
+    "decisiva EGY": 67,
+    "parcial ISR": 33,
+    "parcial EGY": 16,
+    "marginal EGY": 7,
+    "decisiva ISR": 4
+   },
+   "ponte": 0.845,
+   "ponteViva": 0.19,
+   "oeste0": 0.31,
+   "oeste": 5.425,
+   "perdasISR": 3.13,
+   "perdasEGY": 5.315,
+   "obj": 0.765
+  }
+ },
+ "nash": {
+  "valor": 0.5479146742510607,
+  "pIsr": [
+   0.006620081742670292,
+   0.9933799182573327
+  ],
+  "pEgy": [
+   1
+  ],
+  "explorIsr": 0.0020853257489393817,
+  "explorEgy": 0
+ },
+ "atqs": [
+  "PUCT selfplay, prior política",
+  "PUCT selfplay, prior união"
+ ],
+ "defs": [
+  "heurística padrão"
+ ]
+}

@@ -1,0 +1,33 @@
+  1/4500 partidas (0s)
+  452/4500 partidas (61s)
+  721/4500 partidas (121s)
+  1158/4500 partidas (181s)
+  1428/4500 partidas (241s)
+  1672/4500 partidas (301s)
+  2029/4500 partidas (361s)
+  2186/4500 partidas (422s)
+  2368/4500 partidas (482s)
+  2599/4500 partidas (542s)
+  3012/4500 partidas (602s)
+  3171/4500 partidas (663s)
+  3248/4500 partidas (723s)
+  3434/4500 partidas (783s)
+  3674/4500 partidas (843s)
+  3947/4500 partidas (903s)
+  4110/4500 partidas (963s)
+  4275/4500 partidas (1024s)
+  4439/4500 partidas (1084s)
+
+Israel vence (IC 95%), n por célula até 300:
+atacante \ defensor          D0 heur padrão           G1 GNN antigo            G2 GNN re-treinado      
+H0 heur padrão               13.7% [10.2–18.0]        13.3% [9.9–17.6]         9.3% [6.5–13.2]         
+H1 heur sem exp              14.3% [10.8–18.8]        13.0% [9.7–17.3]         8.3% [5.7–12.0]         
+HC heur CEM                  47.3% [41.8–53.0]        14.3% [10.8–18.8]        12.7% [9.4–16.9]        
+NA MLP Fase A                21.0% [16.8–26.0]        58.0% [52.3–63.4]        4.0% [2.3–6.9]          
+N3 MLP re-treinado           89.7% [85.7–92.6]        3.3% [1.8–6.0]           0.0% [0.0–1.3]          
+
+NASH da população: Israel vence 12.4% (gap 0.4 pp)
+  mistura Israel: H0 heur padrão 2%, H1 heur sem exp 1%, HC heur CEM 94%, NA MLP Fase A 2%
+  mistura Egito:  G2 GNN re-treinado 99%
+
+4500 partidas em 1106s

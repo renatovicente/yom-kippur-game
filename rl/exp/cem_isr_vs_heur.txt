@@ -1,0 +1,19 @@
+CEM ISR vs {"tipo":"heur"} | 11 parâmetros | pop 16, n 120, 12 gerações
+  ger  1 | aptidão média-atual -0.742 | melhor -0.206 | σ médio 0.191 | 97s
+  ger  2 | aptidão média-atual -0.716 | melhor -0.011 | σ médio 0.118 | 206s
+  ger  3 | aptidão média-atual -0.401 | melhor 0.040 | σ médio 0.097 | 337s
+  ger  4 | aptidão média-atual -0.271 | melhor -0.087 | σ médio 0.066 | 462s
+  ger  5 | aptidão média-atual -0.356 | melhor -0.049 | σ médio 0.051 | 595s
+  ger  6 | aptidão média-atual -0.093 | melhor 0.023 | σ médio 0.047 | 720s
+  ger  7 | aptidão média-atual -0.177 | melhor -0.069 | σ médio 0.041 | 844s
+  ger  8 | aptidão média-atual -0.235 | melhor -0.137 | σ médio 0.040 | 972s
+  ger  9 | aptidão média-atual -0.038 | melhor 0.013 | σ médio 0.034 | 1148s
+  ger 10 | aptidão média-atual -0.108 | melhor -0.076 | σ médio 0.032 | 1285s
+  ger 11 | aptidão média-atual -0.057 | melhor -0.000 | σ médio 0.031 | 1449s
+  ger 12 | aptidão média-atual -0.068 | melhor -0.008 | σ médio 0.031 | 1603s
+
+VALIDAÇÃO (1000 seeds novas, ISR vence):
+  pesos originais: 18.6% [16.3–21.1] | score -0.633
+  pesos CEM:       50.8% [47.7–53.9] | score -0.149
+  pesos CEM: {"expectimax":false,"dist":4.459,"alvo":74.575,"ev":56.525,"apoioEngaja":82.527,"exposicao":36.08,"expRazao":1.601,"terreno":3.014,"ponteInimigo":1.255,"ponteEng":0.02,"ponteObj":0.32,"guardaPonte":0.231}
+salvo em rl/exp/cem_isr_vs_heur.json (1718s)

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Guerra do Yom Kippur — Wargame</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Tela inicial -->
+<div id="setup" class="overlay">
+  <div class="painel-setup">
+    <h1>A GUERRA DO YOM KIPPUR</h1>
+    <p class="sub">Wargame histórico — Sinai, outubro de 1973</p>
+    <p class="desc">A travessia do Canal de Suez: a força-tarefa israelense tenta estabelecer
+    uma cabeça-de-ponte na margem oeste, destruir as baterias SAM e isolar o Terceiro
+    Exército Egípcio antes do cessar-fogo (6 rodadas).</p>
+    <h2>Escolha o modo de jogo</h2>
+    <p class="desc">Defina quem controla cada lado de forma independente — humano,
+    a IA heurística, ou uma rede treinada por reinforcement learning.</p>
+    <div class="ladosSel">
+      <fieldset class="ladoSel" data-lado="ISR">
+        <legend>🪖 Israel</legend>
+        <label><input type="radio" name="ctrlISR" value="humano" checked> Humano</label>
+        <label><input type="radio" name="ctrlISR" value="ia"> IA Heurística</label>
+        <label><input type="radio" name="ctrlISR" value="neural"> IA Neural
+          <select id="modeloISR" disabled></select></label>
+        <label><input type="radio" name="ctrlISR" value="mcts"> 🔍 IA Busca <small>(PUCT + rede-valor, +lenta)</small></label>
+      </fieldset>
+      <fieldset class="ladoSel" data-lado="EGY">
+        <legend>🦅 Egito</legend>
+        <label><input type="radio" name="ctrlEGY" value="humano"> Humano</label>
+        <label><input type="radio" name="ctrlEGY" value="ia" checked> IA Heurística</label>
+        <label><input type="radio" name="ctrlEGY" value="neural"> IA Neural
+          <select id="modeloEGY" disabled></select></label>
+        <label><input type="radio" name="ctrlEGY" value="mcts"> 🔍 IA Busca <small>(PUCT + rede-valor, +lenta)</small></label>
+      </fieldset>
+    </div>
+    <div class="modos">
+      <button id="btnIniciar">▶ Iniciar partida</button>
+    </div>
+    <p id="avisoNeural" class="nota-ia hidden"></p>
+    <details>
+      <summary>Opções avançadas</summary>
+      <label>Semente (partida reproduzível): <input id="seed" type="number" placeholder="aleatória"></label>
+    </details>
+    <details>
+      <summary>Contexto histórico</summary>
+      <div class="regras-resumo">
+        <p><b>O Sinai depois de 1967.</b> Na Guerra dos Seis Dias, Israel conquistou
+        toda a península do Sinai e levou suas linhas até a margem leste do Canal de
+        Suez. O canal — antes uma das artérias do comércio mundial — ficou fechado e
+        virou linha de frente. Na margem leste, os israelenses ergueram a <b>Linha
+        Bar-Lev</b>, uma cadeia de fortificações de areia e concreto; na margem oeste,
+        os egípcios acumularam artilharia e, decisivamente, uma densa rede de
+        <b>mísseis antiaéreos SAM</b> de fabricação soviética, capaz de neutralizar a
+        maior vantagem israelense: a aviação.</p>
+        <p><b>6 de outubro de 1973.</b> No feriado judaico do Yom Kippur (e durante o
+        Ramadã), Egito e Síria atacaram de surpresa em duas frentes. Na operação
+        egípcia, dezenas de milhares de soldados cruzaram o canal em botes sob uma
+        barragem maciça de artilharia, abriram brechas nas rampas de areia com
+        jatos d'água de alta pressão e romperam a Linha Bar-Lev em poucos dias —
+        cerca de 70 mil homens e centenas de tanques estabeleceram-se na margem
+        leste, sempre protegidos pelo guarda-chuva dos SAMs.</p>
+        <p><b>A crise israelense.</b> Os primeiros contra-ataques blindados de Israel,
+        baseados na doutrina de ataques rápidos de tanques apoiados pela aviação,
+        fracassaram com perdas pesadas: os mísseis antitanque portáteis da infantaria
+        egípcia e os SAMs cobravam um preço altíssimo. A guerra que se imaginava
+        rápida transformou-se numa luta de atrito nas areias do Sinai.</p>
+        <p><b>A virada.</b> Em 14 de outubro, o Egito lançou uma ofensiva para fora do
+        alcance dos seus SAMs — e perdeu centenas de blindados numa das maiores
+        batalhas de tanques da história. Israel aproveitou o desgaste e, na noite de
+        15 para 16 de outubro, a divisão do general <b>Ariel Sharon</b> encontrou a
+        "costura" entre os dois exércitos egípcios e cruzou o canal junto a
+        <b>Deversoir</b>, ao norte do Grande Lago Amargo. Uma cabeça-de-ponte
+        precária — primeiro em botes e balsas, depois por pontes de engenharia
+        instaladas sob fogo — foi alargada em combates ferozes na região agrícola
+        irrigada pelo <b>canal de água doce</b> (a "Fazenda Chinesa"), exatamente o
+        terreno retratado no tabuleiro.</p>
+        <p><b>O bolsão do Deversoir.</b> Na margem oeste ("África", como diziam os
+        israelenses), as colunas blindadas caçaram as baterias SAM — reabrindo o céu
+        para sua aviação —, ameaçaram <b>Ismaília</b> ao norte e avançaram para o sul,
+        cortando as estradas de suprimento. Quando o cessar-fogo da ONU (Resolução
+        338) entrou em vigor entre 22 e 25 de outubro, o <b>Terceiro Exército
+        Egípcio</b> estava cercado na ponta sul do canal, sem abastecimento — embora o
+        Egito mantivesse suas conquistas na margem leste.</p>
+        <p><b>O legado.</b> A guerra terminou sem vencedor militar absoluto, mas mudou
+        o mapa político: o desempenho inicial egípcio restaurou o orgulho nacional e
+        deu a Anwar Sadat o capital político para negociar; o choque israelense
+        derrubou certezas e governos. O caminho desembocou nos acordos de
+        desengajamento, em Camp David (1978) e na devolução do Sinai. <i>O jogo
+        simula precisamente o lance mais audacioso dessa guerra: os dias da
+        cabeça-de-ponte de Deversoir, em que o General Israelense corre contra o
+        relógio do cessar-fogo e o General Egípcio luta para conter o bolsão.</i></p>
+      </div>
+    </details>
+    <details>
+      <summary>As peças e seus números</summary>
+      <div class="regras-resumo">
+        <p>Cada peça traz o <b>Índice de Combate</b> (IC, força de ataque e defesa) e o
+        <b>Índice de Mobilidade</b> (IM, pontos de movimento por fase), no formato
+        <b>IC-IM</b>. A artilharia e os foguetes trazem ainda o <b>Alcance de Fogo</b>
+        no canto superior direito, em casas. Quando a unidade sofre baixas, a peça
+        "vira o verso" (silhueta clara, borda tracejada) e passa a usar os valores
+        reduzidos — uma segunda baixa a elimina. As bases SAM não têm números:
+        não se movem nem combatem.</p>
+        <div id="guiaPecas"></div>
+      </div>
+    </details>
+    <details>
+      <summary>Entradas e reforços</summary>
+      <div class="regras-resumo">
+        <p><b>Força inicial israelense</b> (7 tanques, 3 transportes, engenharia e
+        2 artilharias automotivas): entra desde a 1ª rodada pelas casas
+        <b>2505</b> (estrada de Jerusalém) ou <b>1922</b>, à escolha — exceto a
+        <b>engenharia, que só entra por 2505</b>.</p>
+        <p><b>Reforços israelenses</b> (3 tanques 4-20 e 3 transportes 2-20): ficam
+        disponíveis <b>na rodada seguinte</b> à instalação da ponte de engenharia
+        sobre o Canal de Suez, entram <b>somente por 2505</b> e apenas
+        <b>enquanto a ponte estiver de pé</b> — se ela for desfeita antes de
+        entrarem, aguardam a reconstrução. A engenharia eliminada pode retornar na
+        rodada seguinte, também só por 2505.</p>
+        <p><b>Reforços egípcios</b> — entram por <b>1201, 0621 ou 0722</b>, à escolha:</p>
+        <ul>
+          <li><b>3ª rodada:</b> 1 transporte blindado (2-20) + 1 bateria de foguetes (3-15, alcance 4)</li>
+          <li><b>4ª rodada:</b> 1 transporte (2-20) + 1 tanque pesado (5-20) + 2 artilharias (3-15, alcance 8)</li>
+          <li><b>5ª rodada:</b> 1 transporte (2-20) + 2 tanques pesados (5-20)</li>
+        </ul>
+        <p>Reforços não usados <b>acumulam</b> e podem entrar em qualquer rodada
+        posterior. Atenção: 0722 começa ocupada pela infantaria egípcia — enquanto
+        ela não sair, essa entrada fica bloqueada.</p>
+        <p><b>Fila de entrada</b> (vale para todos): na mesma fase, a 1ª unidade a
+        entrar por uma casa paga 1 ponto de movimento, a 2ª paga 2, a 3ª paga 3…
+        (contagem independente por casa). Casa de entrada <b>ocupada bloqueia</b> a
+        entrada; entrando em zona de engajamento inimiga, a unidade <b>para na
+        primeira casa</b> e fica engajada. No jogo, o painel "Unidades fora do
+        tabuleiro" mostra o pool disponível na sua fase de movimentação — clique
+        numa unidade e as casas de entrada válidas acendem no tabuleiro.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Resumo das regras</summary>
+      <div class="regras-resumo">
+        <p><b>Objetivo israelense:</b> destruir/capturar as 3 bases SAM, controlar as duas
+        entradas de Ismaília (0803 e 1202) e uma entrada de Fahid (0621 ou 0722).
+        <b>Objetivo egípcio:</b> impedir isso e manter as estradas Fahid–Ismaília livres.</p>
+        <p><b>Rodada (8 fases):</b> Israel move → designa ataques → Egito cobre → combates;
+        depois o mesmo com os papéis invertidos.</p>
+        <p><b>Movimento:</b> cada unidade gasta seu Índice de Mobilidade. Estrada/cidade 1,
+        aberto 2, dunas/bosque 3, acidentado 4; canal de água doce +3 fora das pontes.
+        Entrar na zona de engajamento inimiga (6 casas vizinhas) obriga a parar — e a atacar
+        na sua fase de combate.</p>
+        <p><b>Combate:</b> soma dos IC do atacante × defensor (com bônus de terreno);
+        a razão define a coluna (−2 a +2); 2d6 na Tabela de Efeitos. Unidades com baixas
+        viram o verso (valores reduzidos); segunda baixa elimina.</p>
+        <p><b>Canal de Suez:</b> só se cruza pela ponte de Ismaília (1202–1303) ou pela ponte
+        que a engenharia israelense instalar na margem leste entre os lagos. A ponte instalada
+        libera os reforços israelenses na rodada seguinte.</p>
+        <p><b>Artilharia:</b> apoia ataques (barragem) ou defesas (cobertura) à distância,
+        uma vez por rodada, somando seu IC.</p>
+      </div>
+    </details>
+  </div>
+</div>
+
+<!-- Jogo -->
+<div id="app" class="hidden">
+  <header>
+    <div id="faseBanner">—</div>
+    <div id="rodadas"></div>
+    <div class="acoes">
+      <label id="togglePasso" title="Avançar manualmente cada movimento da IA">
+        <input type="checkbox" id="chkPasso"> 👣 Passo a passo da IA</label>
+      <span id="passoControles" class="hidden">
+        <button id="btnPasso">▶ Próximo movimento</button>
+        <button id="btnPular">▶▶ Pular fase</button>
+      </span>
+      <button id="btnFase">Encerrar fase ▶</button>
+      <button id="btnNovo">↺ Nova partida</button>
+    </div>
+  </header>
+  <main>
+    <div id="boardWrap">
+      <svg id="board" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <aside id="sidebar">
+      <div id="instrucao" class="cartao"></div>
+      <div id="poolBox" class="cartao hidden">
+        <h3>Unidades fora do tabuleiro</h3>
+        <div id="pool"></div>
+      </div>
+      <div id="combatesBox" class="cartao hidden">
+        <h3>Combates designados</h3>
+        <div id="combates"></div>
+      </div>
+      <div id="infoBox" class="cartao"><h3>Informações</h3><div id="info">Passe o mouse sobre o tabuleiro.</div></div>
+      <div class="cartao"><h3>Diário de operações</h3><div id="log"></div></div>
+    </aside>
+  </main>
+</div>
+
+<!-- Modal de escolhas -->
+<div id="modal" class="overlay hidden">
+  <div class="painel-modal">
+    <h3 id="modalTitulo"></h3>
+    <div id="modalCorpo"></div>
+  </div>
+</div>
+
+<!-- Fim de jogo -->
+<div id="fim" class="overlay hidden">
+  <div class="painel-setup">
+    <h1 id="fimTitulo"></h1>
+    <div id="fimDetalhe"></div>
+    <div class="modos"><button id="btnNovo2">Nova partida</button></div>
+  </div>
+</div>
+
+<script src="js/map-data.js"></script>
+<script src="js/units.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/rl-core.js"></script>
+<script src="js/ai-neural.js"></script>
+<script src="js/ai-mcts.js"></script>
+<script src="js/ai-macro.js"></script>
+<script src="js/ai-hier.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

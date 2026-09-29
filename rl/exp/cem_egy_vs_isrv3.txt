@@ -1,0 +1,20 @@
+CEM EGY vs {"tipo":"neural","modelo":"web/models/ISR_v3.json"} | 8 parâmetros | pop 16, n 120, 12 gerações
+  ger  1 | aptidão média-atual -0.153 | melhor 0.813 | σ médio 0.194 | 268s
+  ger  2 | aptidão média-atual -0.158 | melhor 0.827 | σ médio 0.155 | 595s
+  ger  3 | aptidão média-atual -0.214 | melhor 0.880 | σ médio 0.145 | 956s
+  ger  4 | aptidão média-atual -0.124 | melhor 0.918 | σ médio 0.107 | 1212s
+  ger  5 | aptidão média-atual 0.434 | melhor 0.994 | σ médio 0.086 | 1561s
+  ger  6 | aptidão média-atual 0.962 | melhor 1.000 | σ médio 0.067 | 1956s
+  ger  7 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.040 | 2250s
+  ger  8 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.036 | 2612s
+  ger  9 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.032 | 3002s
+  ger 10 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.030 | 3388s
+  ger 11 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.030 | 3791s
+  ger 12 | aptidão média-atual 1.000 | melhor 1.000 | σ médio 0.030 | 4202s
+
+VALIDAÇÃO (1000 seeds novas, EGY vence):
+  pesos originais:          12.9% [11.0–15.1] | score -0.196
+  CEM média final:          100.0% [99.6–100.0] | score 1.000
+  CEM melhor indiv. (g6): 100.0% [99.6–100.0] | score 0.993
+  pesos CEM: {"expectimax":true,"dist":3.13,"alvo":84.339,"ev":57.398,"apoioEngaja":113.307,"exposicao":36.963,"expRazao":1.575,"terreno":4.198,"cacaRaio":10.066}
+salvo em rl/exp/cem_egy_vs_isrv3.json (4855s)

@@ -1,0 +1,18 @@
+CEM ISR vs {"tipo":"neural","modelo":"web/models/EGY_v2.json"} | 11 parâmetros | pop 16, n 100, 10 gerações
+  ger  1 | aptidão média-atual -0.825 | melhor -0.564 | σ médio 0.171 | 590s
+  ger  2 | aptidão média-atual -0.650 | melhor -0.511 | σ médio 0.161 | 1069s
+  ger  3 | aptidão média-atual -0.523 | melhor -0.478 | σ médio 0.124 | 1510s
+  ger  4 | aptidão média-atual -0.478 | melhor -0.388 | σ médio 0.090 | 2162s
+  ger  5 | aptidão média-atual -0.451 | melhor -0.400 | σ médio 0.067 | 2590s
+  ger  6 | aptidão média-atual -0.498 | melhor -0.446 | σ médio 0.062 | 3014s
+  ger  7 | aptidão média-atual -0.427 | melhor -0.414 | σ médio 0.053 | 3409s
+  ger  8 | aptidão média-atual -0.461 | melhor -0.452 | σ médio 0.044 | 3772s
+  ger  9 | aptidão média-atual -0.405 | melhor -0.405 | σ médio 0.042 | 4067s
+  ger 10 | aptidão média-atual -0.420 | melhor -0.405 | σ médio 0.036 | 4360s
+
+VALIDAÇÃO (500 seeds novas, ISR vence):
+  pesos originais:          11.6% [9.1–14.7] | score -0.777
+  CEM média final:          19.2% [16.0–22.9] | score -0.475
+  CEM melhor indiv. (g4): 19.6% [16.4–23.3] | score -0.500
+  pesos CEM: {"expectimax":false,"dist":5.102,"alvo":45.865,"ev":59.957,"apoioEngaja":94.2,"exposicao":48.1,"expRazao":2.328,"terreno":3.87,"ponteInimigo":1.237,"ponteEng":0.092,"ponteObj":0.487,"guardaPonte":1.009}
+salvo em rl/exp/cem_isr_vs_egyv2.json (4650s)

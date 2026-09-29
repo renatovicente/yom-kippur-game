@@ -1,0 +1,128 @@
+{
+ "n": 60,
+ "seed0": 7000000,
+ "atacantes": {
+  "H0 heur padrão": {
+   "tipo": "heur"
+  },
+  "H1 heur sem exp": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": false
+   }
+  },
+  "HC heur CEM": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": false,
+    "dist": 4.4594342991494536,
+    "alvo": 74.57465533065081,
+    "ev": 56.52531484995036,
+    "apoioEngaja": 82.52707527061918,
+    "exposicao": 36.0798827542647,
+    "expRazao": 1.6011904318032442,
+    "terreno": 3.014059182622595,
+    "ponteInimigo": 1.255062034499016,
+    "ponteEng": 0.019645145808569388,
+    "ponteObj": 0.3196408058381411,
+    "guardaPonte": 0.2312790393270731
+   }
+  },
+  "NA MLP Fase A": {
+   "tipo": "neural",
+   "modelo": "web/models/ISR.json"
+  },
+  "N3 MLP re-treinado": {
+   "tipo": "neural",
+   "modelo": "web/models/ISR_v3.json"
+  },
+  "P3 PUCT re-treinado (união)": {
+   "tipo": "puct",
+   "valor": "web/models/ISR_v3.json",
+   "sims": 24,
+   "prof": 3,
+   "prior": "uniao"
+  }
+ },
+ "defensores": {
+  "D0 heur padrão": {
+   "tipo": "heur"
+  },
+  "G1 GNN antigo": {
+   "tipo": "neural",
+   "modelo": "web/models/EGY_gnn.json"
+  },
+  "G2 GNN re-treinado": {
+   "tipo": "neural",
+   "modelo": "web/models/EGY_v2.json"
+  },
+  "PD PUCT defensor (prior heur.)": {
+   "tipo": "puct",
+   "valor": "web/models/EGY_v2.json",
+   "sims": 24,
+   "prof": 3,
+   "prior": "heuristica"
+  },
+  "PDp PUCT defensor (prior pol.)": {
+   "tipo": "puct",
+   "valor": "web/models/EGY_v2.json",
+   "sims": 24,
+   "prof": 3,
+   "prior": "politica"
+  }
+ },
+ "pares": [
+  [
+   "P3 PUCT re-treinado (união)",
+   "D0 heur padrão"
+  ],
+  [
+   "P3 PUCT re-treinado (união)",
+   "G1 GNN antigo"
+  ],
+  [
+   "P3 PUCT re-treinado (união)",
+   "G2 GNN re-treinado"
+  ],
+  [
+   "H0 heur padrão",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "H1 heur sem exp",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "HC heur CEM",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "NA MLP Fase A",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "N3 MLP re-treinado",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "P3 PUCT re-treinado (união)",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "H1 heur sem exp",
+   "PDp PUCT defensor (prior pol.)"
+  ],
+  [
+   "HC heur CEM",
+   "PDp PUCT defensor (prior pol.)"
+  ],
+  [
+   "N3 MLP re-treinado",
+   "PDp PUCT defensor (prior pol.)"
+  ]
+ ],
+ "nPar": {
+  "P3 PUCT re-treinado (união)|PD PUCT defensor (prior heur.)": 40
+ },
+ "saida": "rl/exp/m2c_res.json"
+}

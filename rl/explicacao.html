@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Como funciona o sistema de RL — A Guerra do Yom Kippur</title>
+<style>
+  body { font-family: Georgia, serif; background:#efe7d2; color:#2b2418; margin:0; padding:24px; }
+  main { max-width: 1040px; margin: 0 auto; }
+  h1 { border-bottom:3px double #2b2418; padding-bottom:8px; letter-spacing:1px; }
+  h2 { margin-top:38px; border-bottom:1px solid #b6a98a; padding-bottom:4px; }
+  p, li { font-size:15px; line-height:1.55; }
+  .cartao { background:#fff; border:2px solid #2b2418; padding:14px 18px; margin:14px 0;
+            box-shadow:5px 5px 0 rgba(0,0,0,.15); }
+  svg { display:block; margin:10px auto; max-width:100%; }
+  .legenda { font-size:13px; color:#555; text-align:center; margin-top:4px; }
+  table { border-collapse:collapse; font-size:14px; margin:10px 0; }
+  td, th { border:1px solid #b6a98a; padding:5px 12px; }
+  th { background:#e8dec4; }
+  code { background:#e8dec4; padding:1px 5px; font-size:13px; }
+  .dois { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:800px){ .dois { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Como funciona o sistema de RL</h1>
+<p>Esta página explica, de ponta a ponta, como uma rede neural aprende a jogar
+<b>A Guerra do Yom Kippur</b> por <i>reinforcement learning</i> — jogando milhares
+de partidas contra a IA heurística e ajustando-se a cada lote de experiência.</p>
+
+<!-- ============================================================ -->
+<h2>1. A arquitetura: quem conversa com quem</h2>
+<div class="cartao">
+<svg viewBox="0 0 1000 360" font-family="Georgia" font-size="14">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2418"/>
+    </marker>
+  </defs>
+  <!-- motor -->
+  <rect x="20" y="120" width="180" height="120" fill="#f3ecd8" stroke="#2b2418" stroke-width="2"/>
+  <text x="110" y="145" text-anchor="middle" font-weight="bold">Motor do jogo</text>
+  <text x="110" y="168" text-anchor="middle" font-size="12">rules.js · game.js · ai.js</text>
+  <text x="110" y="190" text-anchor="middle" font-size="12">as MESMAS regras da</text>
+  <text x="110" y="206" text-anchor="middle" font-size="12">versão jogável no navegador</text>
+  <!-- env -->
+  <rect x="250" y="100" width="190" height="160" fill="#d9ead3" stroke="#2b2418" stroke-width="2"/>
+  <text x="345" y="125" text-anchor="middle" font-weight="bold">env.mjs (×K)</text>
+  <text x="345" y="148" text-anchor="middle" font-size="12">ambiente "gym":</text>
+  <text x="345" y="166" text-anchor="middle" font-size="12">reset() / step(ação)</text>
+  <text x="345" y="184" text-anchor="middle" font-size="12">observação + máscara</text>
+  <text x="345" y="202" text-anchor="middle" font-size="12">de ações legais</text>
+  <text x="345" y="228" text-anchor="middle" font-size="12">oponente: IA heurística</text>
+  <!-- worker -->
+  <rect x="250" y="285" width="190" height="56" fill="#fff2cc" stroke="#2b2418" stroke-width="2"/>
+  <text x="345" y="308" text-anchor="middle" font-weight="bold" font-size="13">worker.mjs (×M processos)</text>
+  <text x="345" y="327" text-anchor="middle" font-size="12">K ambientes por processo</text>
+  <!-- treinador -->
+  <rect x="560" y="100" width="200" height="160" fill="#cfe2f3" stroke="#2b2418" stroke-width="2"/>
+  <text x="660" y="125" text-anchor="middle" font-weight="bold">train.py</text>
+  <text x="660" y="148" text-anchor="middle" font-size="12">rede neural (PyTorch)</text>
+  <text x="660" y="166" text-anchor="middle" font-size="12">algoritmo PPO</text>
+  <text x="660" y="184" text-anchor="middle" font-size="12">GAE · clip · entropia</text>
+  <text x="660" y="210" text-anchor="middle" font-size="12">avaliação periódica</text>
+  <text x="660" y="228" text-anchor="middle" font-size="12">greedy vs heurística</text>
+  <!-- saídas -->
+  <rect x="820" y="60" width="160" height="64" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+  <text x="900" y="85" text-anchor="middle" font-weight="bold" font-size="13">dashboard.html</text>
+  <text x="900" y="105" text-anchor="middle" font-size="12">evolução ao vivo</text>
+  <rect x="820" y="150" width="160" height="64" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+  <text x="900" y="175" text-anchor="middle" font-weight="bold" font-size="13">ckpt_NNNN.pt</text>
+  <text x="900" y="195" text-anchor="middle" font-size="12">gerações da política</text>
+  <rect x="820" y="240" width="160" height="64" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+  <text x="900" y="265" text-anchor="middle" font-weight="bold" font-size="13">policy.json</text>
+  <text x="900" y="285" text-anchor="middle" font-size="12">→ play-checkpoint.mjs</text>
+  <!-- setas -->
+  <line x1="200" y1="180" x2="248" y2="180" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="345" y1="262" x2="345" y2="283" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="442" y1="155" x2="558" y2="155" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="558" y1="205" x2="442" y2="205" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="500" y="145" text-anchor="middle" font-size="12">observação + máscara</text>
+  <text x="500" y="225" text-anchor="middle" font-size="12">ações (lote)</text>
+  <text x="500" y="250" text-anchor="middle" font-size="11" font-style="italic">JSON-lines (stdio)</text>
+  <line x1="762" y1="120" x2="818" y2="95" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="762" y1="180" x2="818" y2="180" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="762" y1="240" x2="818" y2="268" stroke="#2b2418" stroke-width="2" marker-end="url(#seta)"/>
+</svg>
+<p class="legenda">M processos Node × K ambientes jogam em paralelo; o Python decide
+as ações de todos de uma vez (inferência em lote) e treina a rede com a experiência.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>2. O laço de decisão: uma jogada por vez</h2>
+<div class="cartao">
+<svg viewBox="0 0 1000 270" font-family="Georgia" font-size="13">
+  <defs>
+    <marker id="s2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2418"/>
+    </marker>
+  </defs>
+  <!-- estado -->
+  <rect x="30" y="60" width="200" height="150" fill="#f3ecd8" stroke="#2b2418" stroke-width="2"/>
+  <text x="130" y="85" text-anchor="middle" font-weight="bold">Estado da partida</text>
+  <!-- mini grade hexagonal estilizada -->
+  <g stroke="#998c6a" fill="none">
+    <polygon points="80,120 92,113 104,120 104,134 92,141 80,134"/>
+    <polygon points="104,120 116,113 128,120 128,134 116,141 104,134" fill="#ecd36a"/>
+    <polygon points="128,120 140,113 152,120 152,134 140,141 128,134"/>
+    <polygon points="92,141 104,134 116,141 116,155 104,162 92,155" fill="#7db4dd"/>
+    <polygon points="116,141 128,134 140,141 140,155 128,162 116,155"/>
+    <polygon points="140,141 152,134 164,141 164,155 152,162 140,155" fill="#e88ca0"/>
+  </g>
+  <text x="130" y="190" text-anchor="middle" font-size="12">rodada · fase · unidades</text>
+  <!-- observação -->
+  <g>
+    <rect x="280" y="76" width="86" height="64" fill="#d9ead3" stroke="#2b2418"/>
+    <rect x="288" y="68" width="86" height="64" fill="#d9ead3" stroke="#2b2418"/>
+    <rect x="296" y="60" width="86" height="64" fill="#d9ead3" stroke="#2b2418"/>
+    <text x="340" y="96" text-anchor="middle" font-size="12">20 planos ×</text>
+    <text x="340" y="112" text-anchor="middle" font-size="12">538 casas</text>
+    <text x="332" y="160" text-anchor="middle" font-size="12">+ máscara das</text>
+    <text x="332" y="176" text-anchor="middle" font-size="12">ações legais</text>
+  </g>
+  <!-- rede -->
+  <g>
+    <rect x="440" y="50" width="170" height="160" fill="#cfe2f3" stroke="#2b2418" stroke-width="2"/>
+    <text x="525" y="74" text-anchor="middle" font-weight="bold">Rede neural</text>
+    <!-- neurônios -->
+    <g fill="#2b2418">
+      <circle cx="470" cy="100" r="5"/><circle cx="470" cy="125" r="5"/>
+      <circle cx="470" cy="150" r="5"/><circle cx="470" cy="175" r="5"/>
+      <circle cx="525" cy="112" r="5"/><circle cx="525" cy="140" r="5"/><circle cx="525" cy="168" r="5"/>
+      <circle cx="580" cy="120" r="5"/><circle cx="580" cy="160" r="5"/>
+    </g>
+    <g stroke="#7a6d4f" stroke-width="1">
+      <line x1="475" y1="100" x2="520" y2="112"/><line x1="475" y1="125" x2="520" y2="140"/>
+      <line x1="475" y1="150" x2="520" y2="140"/><line x1="475" y1="175" x2="520" y2="168"/>
+      <line x1="475" y1="125" x2="520" y2="112"/><line x1="475" y1="150" x2="520" y2="168"/>
+      <line x1="530" y1="112" x2="575" y2="120"/><line x1="530" y1="140" x2="575" y2="120"/>
+      <line x1="530" y1="140" x2="575" y2="160"/><line x1="530" y1="168" x2="575" y2="160"/>
+    </g>
+    <text x="525" y="200" text-anchor="middle" font-size="11">política (539 logits) + valor</text>
+  </g>
+  <!-- ação -->
+  <rect x="670" y="76" width="140" height="110" fill="#fff2cc" stroke="#2b2418" stroke-width="2"/>
+  <text x="740" y="100" text-anchor="middle" font-weight="bold">Ação</text>
+  <text x="740" y="122" text-anchor="middle" font-size="12">uma casa (0–537):</text>
+  <text x="740" y="138" text-anchor="middle" font-size="12">mover · entrar · apoiar</text>
+  <text x="740" y="158" text-anchor="middle" font-size="12">ou PASSAR (538)</text>
+  <!-- recompensa -->
+  <rect x="855" y="76" width="120" height="110" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+  <text x="915" y="100" text-anchor="middle" font-weight="bold">Fim do jogo</text>
+  <text x="915" y="124" text-anchor="middle" font-size="12">recompensa:</text>
+  <text x="915" y="142" text-anchor="middle" font-size="12">vitória +1 / +0.6 / +0.3</text>
+  <text x="915" y="160" text-anchor="middle" font-size="12">derrota −1 / −0.6 / −0.3</text>
+  <!-- setas -->
+  <line x1="230" y1="120" x2="278" y2="105" stroke="#2b2418" stroke-width="2" marker-end="url(#s2)"/>
+  <line x1="384" y1="105" x2="438" y2="115" stroke="#2b2418" stroke-width="2" marker-end="url(#s2)"/>
+  <line x1="610" y1="130" x2="668" y2="130" stroke="#2b2418" stroke-width="2" marker-end="url(#s2)"/>
+  <line x1="810" y1="130" x2="853" y2="130" stroke="#2b2418" stroke-width="2" marker-end="url(#s2)"/>
+  <!-- loop de volta -->
+  <path d="M 740 188 L 740 240 L 130 240 L 130 212" fill="none" stroke="#2b2418" stroke-width="2" marker-end="url(#s2)"/>
+  <text x="435" y="257" text-anchor="middle" font-size="12" font-style="italic">o motor aplica a jogada e o jogo segue (~90 decisões por partida)</text>
+</svg>
+<p class="legenda">A rede vê o tabuleiro como tensores, recebe a lista do que é legal
+fazer e devolve uma jogada. A nota só vem no fim da partida.</p>
+</div>
+
+<div class="dois">
+<div class="cartao">
+<h3 style="margin-top:0">O que a rede enxerga</h3>
+<ul>
+  <li><b>6 planos de terreno</b> (aberto, dunas, bosque, acidentado, cidade, água);</li>
+  <li><b>estradas, margem oeste, objetivos, SAMs vivas</b>;</li>
+  <li>por lado: <b>presença, IC, IM, baixas, artilharia pronta</b>;</li>
+  <li>escalares: rodada, fase, ponte instalada, reforços, perdas, lado.</li>
+</ul>
+</div>
+<div class="cartao">
+<h3 style="margin-top:0">O que a rede decide</h3>
+<ul>
+  <li><b>Movimentação:</b> para cada unidade, um destino entre as casas alcançáveis (ou ficar);</li>
+  <li><b>Entradas:</b> por qual casa o reforço entra (ou aguardar);</li>
+  <li><b>Artilharia:</b> qual combate apoiar com barragem/cobertura (ou guardar o tiro);</li>
+  <li>Os combates em si são <b>obrigatórios pelas regras</b> — não há o que decidir.</li>
+</ul>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<h2>3. A rede neural por dentro</h2>
+<div class="cartao">
+<svg viewBox="0 0 1000 330" font-family="Georgia" font-size="13">
+  <defs>
+    <marker id="s4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2418"/>
+    </marker>
+  </defs>
+  <!-- entrada -->
+  <rect x="30" y="70" width="120" height="190" fill="#f3ecd8" stroke="#2b2418" stroke-width="2"/>
+  <text x="90" y="95" text-anchor="middle" font-weight="bold">Entrada</text>
+  <text x="90" y="118" text-anchor="middle" font-size="12">10.776 floats</text>
+  <text x="90" y="140" text-anchor="middle" font-size="11">20 planos × 538 casas</text>
+  <text x="90" y="156" text-anchor="middle" font-size="11">+ fase + escalares</text>
+  <g fill="#7a6d4f">
+    <rect x="62" y="175" width="56" height="7"/><rect x="62" y="187" width="56" height="7"/>
+    <rect x="62" y="199" width="56" height="7"/><rect x="62" y="211" width="56" height="7"/>
+    <rect x="62" y="223" width="56" height="7"/><rect x="62" y="235" width="56" height="7"/>
+  </g>
+  <!-- camada 1 -->
+  <rect x="215" y="90" width="150" height="150" fill="#cfe2f3" stroke="#2b2418" stroke-width="2"/>
+  <text x="290" y="118" text-anchor="middle" font-weight="bold">Densa 256</text>
+  <text x="290" y="138" text-anchor="middle" font-size="12">ativação tanh</text>
+  <text x="290" y="165" text-anchor="middle" font-size="12">2,76 M parâmetros</text>
+  <text x="290" y="185" text-anchor="middle" font-size="11">(96% da rede: é a</text>
+  <text x="290" y="200" text-anchor="middle" font-size="11">"leitura" do tabuleiro)</text>
+  <!-- camada 2 -->
+  <rect x="430" y="105" width="140" height="120" fill="#cfe2f3" stroke="#2b2418" stroke-width="2"/>
+  <text x="500" y="133" text-anchor="middle" font-weight="bold">Densa 128</text>
+  <text x="500" y="153" text-anchor="middle" font-size="12">ativação tanh</text>
+  <text x="500" y="178" text-anchor="middle" font-size="12">32,9 mil parâmetros</text>
+  <!-- cabeça política -->
+  <rect x="650" y="40" width="160" height="110" fill="#d9ead3" stroke="#2b2418" stroke-width="2"/>
+  <text x="730" y="65" text-anchor="middle" font-weight="bold">Cabeça de política</text>
+  <text x="730" y="86" text-anchor="middle" font-size="12">densa → 539 logits</text>
+  <text x="730" y="104" text-anchor="middle" font-size="12">69 mil parâmetros</text>
+  <text x="730" y="126" text-anchor="middle" font-size="11">um logit por casa + PASSAR</text>
+  <!-- máscara/softmax -->
+  <rect x="855" y="40" width="120" height="110" fill="#fff2cc" stroke="#2b2418" stroke-width="2"/>
+  <text x="915" y="65" text-anchor="middle" font-weight="bold" font-size="13">máscara</text>
+  <text x="915" y="84" text-anchor="middle" font-size="11">ilegais → −∞</text>
+  <text x="915" y="104" text-anchor="middle" font-weight="bold" font-size="13">softmax</text>
+  <text x="915" y="124" text-anchor="middle" font-size="11">distribuição → ação</text>
+  <!-- cabeça valor -->
+  <rect x="650" y="190" width="160" height="100" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+  <text x="730" y="215" text-anchor="middle" font-weight="bold">Cabeça de valor</text>
+  <text x="730" y="236" text-anchor="middle" font-size="12">densa → 1 escalar V(s)</text>
+  <text x="730" y="256" text-anchor="middle" font-size="11">"quão promissora é a posição"</text>
+  <text x="730" y="272" text-anchor="middle" font-size="11">(usada pelo GAE no crédito)</text>
+  <!-- setas -->
+  <line x1="150" y1="165" x2="213" y2="165" stroke="#2b2418" stroke-width="2" marker-end="url(#s4)"/>
+  <line x1="365" y1="165" x2="428" y2="165" stroke="#2b2418" stroke-width="2" marker-end="url(#s4)"/>
+  <line x1="570" y1="140" x2="648" y2="95" stroke="#2b2418" stroke-width="2" marker-end="url(#s4)"/>
+  <line x1="570" y1="190" x2="648" y2="235" stroke="#2b2418" stroke-width="2" marker-end="url(#s4)"/>
+  <line x1="810" y1="95" x2="853" y2="95" stroke="#2b2418" stroke-width="2" marker-end="url(#s4)"/>
+  <text x="500" y="310" text-anchor="middle" font-size="13" font-weight="bold">total ≈ 2,86 milhões de parâmetros (~11 MB — o tamanho de cada ckpt_NNNN.pt)</text>
+</svg>
+<p class="legenda">Tronco compartilhado, duas saídas: a política escolhe a jogada,
+o valor estima o resultado esperado — as duas treinam juntas no PPO.</p>
+<p><b>Por que um MLP simples?</b> O tabuleiro tem só 538 casas — uma rede pequena
+treina rápido na CPU, exporta para <code>policy.json</code> e roda em JavaScript puro
+(<code>play-checkpoint.mjs</code>). A evolução natural documentada no
+<code>RL.md</code> §2 é trocar o tronco por uma <b>CNN sobre a grade 26×22</b> (ou uma
+GNN sobre o grafo hexagonal), que entende vizinhança espacial em vez de tratar cada
+casa como coluna independente — o resto do sistema (máscara, cabeças, PPO) fica igual.
+Detalhe de treino: as cabeças usam inicialização ortogonal (0,01 na política, para
+começar quase uniforme; 1,0 no valor).</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>4. O ciclo de aprendizado (PPO)</h2>
+<div class="cartao">
+<svg viewBox="0 0 1000 300" font-family="Georgia" font-size="13">
+  <defs>
+    <marker id="s3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b2418"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="40" y="100" width="170" height="90" rx="8" fill="#d9ead3" stroke="#2b2418" stroke-width="2"/>
+    <text x="125" y="130" text-anchor="middle" font-weight="bold">1. Coleta</text>
+    <text x="125" y="152" text-anchor="middle" font-size="12">32 partidas em paralelo</text>
+    <text x="125" y="170" text-anchor="middle" font-size="12">~8.000 decisões/lote</text>
+
+    <rect x="260" y="100" width="170" height="90" rx="8" fill="#fff2cc" stroke="#2b2418" stroke-width="2"/>
+    <text x="345" y="130" text-anchor="middle" font-weight="bold">2. Crédito (GAE)</text>
+    <text x="345" y="152" text-anchor="middle" font-size="12">espalha a recompensa final</text>
+    <text x="345" y="170" text-anchor="middle" font-size="12">pelas jogadas da partida</text>
+
+    <rect x="480" y="100" width="170" height="90" rx="8" fill="#cfe2f3" stroke="#2b2418" stroke-width="2"/>
+    <text x="565" y="130" text-anchor="middle" font-weight="bold">3. Atualização</text>
+    <text x="565" y="152" text-anchor="middle" font-size="12">reforça jogadas acima da</text>
+    <text x="565" y="170" text-anchor="middle" font-size="12">média, com passo limitado</text>
+
+    <rect x="700" y="100" width="170" height="90" rx="8" fill="#f4cccc" stroke="#2b2418" stroke-width="2"/>
+    <text x="785" y="130" text-anchor="middle" font-weight="bold">4. Avaliação</text>
+    <text x="785" y="152" text-anchor="middle" font-size="12">24 partidas greedy vs</text>
+    <text x="785" y="170" text-anchor="middle" font-size="12">heurística → dashboard</text>
+
+    <line x1="210" y1="145" x2="258" y2="145" stroke="#2b2418" stroke-width="2" marker-end="url(#s3)"/>
+    <line x1="430" y1="145" x2="478" y2="145" stroke="#2b2418" stroke-width="2" marker-end="url(#s3)"/>
+    <line x1="650" y1="145" x2="698" y2="145" stroke="#2b2418" stroke-width="2" marker-end="url(#s3)"/>
+    <path d="M 785 192 L 785 240 L 125 240 L 125 192" fill="none" stroke="#2b2418" stroke-width="2" marker-end="url(#s3)"/>
+    <text x="455" y="258" text-anchor="middle" font-size="12" font-style="italic">repete (um "update"); checkpoint salvo a cada avaliação — é a linha do tempo das gerações</text>
+    <text x="455" y="60" text-anchor="middle" font-size="14" font-weight="bold">um update ≈ 10–20 segundos nesta máquina</text>
+  </g>
+</svg>
+<p class="legenda">PPO = <i>Proximal Policy Optimization</i>: aprende com a própria
+experiência, mas limita o tamanho de cada passo (clip) para não desaprender de repente.</p>
+</div>
+
+<div class="cartao">
+<h3 style="margin-top:0">A intuição do aprendizado, sem matemática</h3>
+<p>No começo a rede joga <b>aleatoriamente</b> (entre as jogadas legais). Quase toda
+partida termina em derrota — mas <i>algumas derrotas são menos feias</i> que outras.
+O GAE compara cada jogada com a "média esperada" daquele momento (a cabeça de
+<b>valor</b> da rede): jogadas que levaram a resultados melhores que o esperado têm
+sua probabilidade <b>aumentada</b>; piores, <b>diminuída</b>. Repetindo isso milhares
+de vezes, comportamentos compostos emergem: proteger a engenharia, montar a ponte,
+caçar SAMs — nada disso é programado, tudo é descoberto.</p>
+<p>O termo de <b>entropia</b> mantém a exploração no início (a rede é incentivada a
+variar) e decai conforme ela ganha convicção — é a curva "entropia" caindo no
+dashboard.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>5. Onde ver a evolução</h2>
+<div class="cartao">
+<table>
+  <tr><th>Artefato</th><th>O que mostra</th><th>Comando</th></tr>
+  <tr><td><code>runs/&lt;run&gt;/dashboard.html</code></td>
+      <td>6 gráficos ao vivo: taxa de vitória, tipos de vitória, recompensa, entropia, perda de valor, episódios</td>
+      <td><code>open rl/runs/ISR_v2/dashboard.html</code></td></tr>
+  <tr><td><code>runs/&lt;run&gt;/ckpt_NNNN.pt</code></td>
+      <td>a política congelada a cada 5 updates — as "gerações" do jogador</td>
+      <td><code>python3 rl/train.py --resume …</code></td></tr>
+  <tr><td><code>runs/&lt;run&gt;/policy.json</code></td>
+      <td>a geração mais recente, jogável fora do treino</td>
+      <td><code>node rl/play-checkpoint.mjs … 50 ISR</code></td></tr>
+  <tr><td><code>runs/&lt;run&gt;/metrics.jsonl</code></td>
+      <td>o histórico bruto, uma linha por update (sobrevive a quedas)</td>
+      <td><code>tail -f</code></td></tr>
+</table>
+<p>Leitura típica das curvas: <b>entropia desce</b> (a política se decide) →
+<b>recompensa média sobe</b> (perde por margens menores) → <b>vitórias marginais
+aparecem</b> → <b>parciais e decisivas</b>. Israel é o lado difícil: precisa
+descobrir a cadeia ponte → travessia → objetivos contra um defensor que já joga bem.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>6. Por que o desenho é assim</h2>
+<div class="dois">
+<div class="cartao">
+<h3 style="margin-top:0">Máscara de ações</h3>
+<p>O motor informa o que é legal a cada decisão. A rede <b>nunca precisa aprender as
+regras</b> — só estratégia. Sem isso, o aprendizado gastaria a maior parte do tempo
+descobrindo o que é permitido.</p>
+</div>
+<div class="cartao">
+<h3 style="margin-top:0">Microdecisões</h3>
+<p>Em vez de escolher "o turno inteiro" (combinatório demais), a política decide
+<b>uma unidade por vez</b>. O espaço de ações fica pequeno (539) e constante, e o
+mesmo formato serve para movimento, entradas e artilharia.</p>
+</div>
+<div class="cartao">
+<h3 style="margin-top:0">Recompensa só no fim</h3>
+<p>Sem recompensas intermediárias inventadas, não há como a rede "hackear" o placar
+(ex.: farmar um bônus de ponte sem nunca vencer). O GAE se encarrega de distribuir
+o crédito da vitória/derrota pelas ~90 jogadas.</p>
+</div>
+<div class="cartao">
+<h3 style="margin-top:0">O mesmo motor do jogo</h3>
+<p>O ambiente de treino reusa <code>rules.js</code> sem cópias: qualquer correção de
+regra vale automaticamente para o treino — e a exploração do RL já serviu de
+<i>fuzzer</i>, encontrando um bug real de recuo em cadeia que foi corrigido.</p>
+</div>
+</div>
+
+<p style="margin-top:30px; font-size:13px; color:#555">Detalhes técnicos completos:
+<code>rl/RL.md</code> · ambiente: <code>rl/env.mjs</code> · treinador:
+<code>rl/train.py</code> · replay: <code>rl/play-checkpoint.mjs</code></p>
+</main>
+</body>
+</html>

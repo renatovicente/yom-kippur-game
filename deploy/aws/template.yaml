@@ -1,0 +1,84 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  A Guerra do Yom Kippur — site estatico do jogo em S3 privado servido
+  pelo CloudFront com Origin Access Control (OAC).
+
+Parameters:
+  NomeProjeto:
+    Type: String
+    Default: yom-kippur-game
+    Description: Prefixo usado no nome do bucket e dos recursos.
+
+Resources:
+  BucketSite:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub '${NomeProjeto}-${AWS::AccountId}'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+  OAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${NomeProjeto}-oac'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  Distribuicao:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: A Guerra do Yom Kippur
+        DefaultRootObject: index.html
+        HttpVersion: http2
+        PriceClass: PriceClass_100
+        Origins:
+          - Id: origem-s3
+            DomainName: !GetAtt BucketSite.RegionalDomainName
+            OriginAccessControlId: !GetAtt OAC.Id
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+        DefaultCacheBehavior:
+          TargetOriginId: origem-s3
+          ViewerProtocolPolicy: redirect-to-https
+          Compress: true
+          # política gerenciada CachingOptimized
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+
+  PoliticaBucket:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref BucketSite
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AcessoCloudFront
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub '${BucketSite.Arn}/*'
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${Distribuicao}'
+
+Outputs:
+  URLJogo:
+    Description: Endereco publico do jogo
+    Value: !Sub 'https://${Distribuicao.DomainName}'
+  Bucket:
+    Description: Bucket S3 com os arquivos
+    Value: !Ref BucketSite
+  DistribuicaoId:
+    Description: ID da distribuicao CloudFront (para invalidacao de cache)
+    Value: !Ref Distribuicao

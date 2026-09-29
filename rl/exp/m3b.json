@@ -1,0 +1,91 @@
+{
+ "n": 300,
+ "seed0": 7000000,
+ "atacantes": {
+  "HG heur CEM vs GNN": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": false,
+    "dist": 5.101930677592086,
+    "alvo": 45.864549396633656,
+    "ev": 59.95734638545208,
+    "apoioEngaja": 94.20028059240808,
+    "exposicao": 48.09956274779109,
+    "expRazao": 2.327900171724507,
+    "terreno": 3.8695780987629957,
+    "ponteInimigo": 1.2365169868717545,
+    "ponteEng": 0.0921094372038837,
+    "ponteObj": 0.4867244130666198,
+    "guardaPonte": 1.0093262431880325
+   }
+  }
+ },
+ "defensores": {
+  "D0 heur padrão": {
+   "tipo": "heur"
+  },
+  "G1 GNN antigo": {
+   "tipo": "neural",
+   "modelo": "web/models/EGY_gnn.json"
+  },
+  "G2 GNN re-treinado": {
+   "tipo": "neural",
+   "modelo": "web/models/EGY_v2.json"
+  },
+  "DC heur CEM": {
+   "tipo": "heur",
+   "pesos": {
+    "expectimax": true,
+    "dist": 3.1296368414982823,
+    "alvo": 84.33868508612177,
+    "ev": 57.39786406576046,
+    "apoioEngaja": 113.30681066049893,
+    "exposicao": 36.96287238972081,
+    "expRazao": 1.574982349569909,
+    "terreno": 4.19768881084986,
+    "cacaRaio": 10.065679502108278
+   }
+  },
+  "PD PUCT defensor (prior heur.)": {
+   "tipo": "puct",
+   "valor": "web/models/EGY_v2.json",
+   "sims": 24,
+   "prof": 3,
+   "prior": "heuristica"
+  },
+  "E1 GNN PSRO": {
+   "tipo": "neural",
+   "modelo": "web/models/EGY_psro1.json"
+  }
+ },
+ "pares": [
+  [
+   "HG heur CEM vs GNN",
+   "D0 heur padrão"
+  ],
+  [
+   "HG heur CEM vs GNN",
+   "G1 GNN antigo"
+  ],
+  [
+   "HG heur CEM vs GNN",
+   "G2 GNN re-treinado"
+  ],
+  [
+   "HG heur CEM vs GNN",
+   "DC heur CEM"
+  ],
+  [
+   "HG heur CEM vs GNN",
+   "PD PUCT defensor (prior heur.)"
+  ],
+  [
+   "HG heur CEM vs GNN",
+   "E1 GNN PSRO"
+  ]
+ ],
+ "nPar": {
+  "HG heur CEM vs GNN|PD PUCT defensor (prior heur.)": 60
+ },
+ "saida": "rl/exp/m3b_res.json"
+}

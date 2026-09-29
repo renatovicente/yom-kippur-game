@@ -1,0 +1,12 @@
+{
+  "n": 200,
+  "seed0": 6000000,
+  "atacantes": {
+    "PUCT selfplay, prior política": { "tipo": "puct", "valor": "web/models/ISR_selfplay.json", "sims": 48, "prof": 4, "prior": "politica" },
+    "PUCT selfplay, prior união":    { "tipo": "puct", "valor": "web/models/ISR_selfplay.json", "sims": 48, "prof": 4, "prior": "uniao" }
+  },
+  "defensores": {
+    "heurística padrão": { "tipo": "heur" }
+  },
+  "saida": "rl/exp/m1_puct_candidatos_res.json"
+}

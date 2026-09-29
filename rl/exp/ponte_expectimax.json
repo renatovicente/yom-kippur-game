@@ -1,0 +1,1379 @@
+[
+ {
+  "grupo": "expectimax",
+  "nome": "ISR exp=on  × EGY exp=on ",
+  "n": 600,
+  "pesos": {
+   "ISR": {
+    "expectimax": true
+   },
+   "EGY": {
+    "expectimax": true
+   }
+  },
+  "resumo": {
+   "n": 600,
+   "isrW": 68,
+   "egyW": 532,
+   "isr": [
+    0.11333333333333333,
+    0.09038944351332592,
+    0.14119711826049028
+   ],
+   "egy": [
+    0.8866666666666667,
+    0.8588028817395098,
+    0.9096105564866742
+   ],
+   "scoreISR": -0.7715000000000001,
+   "tipos": {
+    "decisiva EGY": 473,
+    "parcial EGY": 51,
+    "marginal ISR": 23,
+    "parcial ISR": 22,
+    "decisiva ISR": 23,
+    "marginal EGY": 8
+   },
+   "ponte": 0.35333333333333333,
+   "ponteViva": 0.10833333333333334,
+   "oeste0": 0.7316666666666667,
+   "oeste": 1.4583333333333333,
+   "perdasISR": 2.8716666666666666,
+   "perdasEGY": 4.805,
+   "obj": 0.255
+  }
+ },
+ {
+  "grupo": "expectimax",
+  "nome": "ISR exp=on  × EGY exp=off",
+  "n": 600,
+  "pesos": {
+   "ISR": {
+    "expectimax": true
+   },
+   "EGY": {
+    "expectimax": false
+   }
+  },
+  "resumo": {
+   "n": 600,
+   "isrW": 143,
+   "egyW": 457,
+   "isr": [
+    0.23833333333333334,
+    0.20597368710112046,
+    0.27402239134064316
+   ],
+   "egy": [
+    0.7616666666666667,
+    0.7259776086593569,
+    0.7940263128988797
+   ],
+   "scoreISR": -0.2933333333333313,
+   "tipos": {
+    "decisiva EGY": 38,
+    "marginal ISR": 25,
+    "parcial EGY": 410,
+    "decisiva ISR": 81,
+    "marginal EGY": 9,
+    "parcial ISR": 37
+   },
+   "ponte": 0.4483333333333333,
+   "ponteViva": 0.29833333333333334,
+   "oeste0": 0.57,
+   "oeste": 3.058333333333333,
+   "perdasISR": 1.1533333333333333,
+   "perdasEGY": 3.24,
+   "obj": 0.5933333333333334
+  }
+ },
+ {
+  "grupo": "expectimax",
+  "nome": "ISR exp=off × EGY exp=on ",
+  "n": 600,
+  "pesos": {
+   "ISR": {
+    "expectimax": false
+   },
+   "EGY": {
+    "expectimax": true
+   }
+  },
+  "resumo": {
+   "n": 600,
+   "isrW": 110,
+   "egyW": 490,
+   "isr": [
+    0.18333333333333332,
+    0.15441929446907846,
+    0.21627659663878826
+   ],
+   "egy": [
+    0.8166666666666667,
+    0.7837234033612118,
+    0.8455807055309216
+   ],
+   "scoreISR": -0.6389999999999997,
+   "tipos": {
+    "marginal ISR": 36,
+    "decisiva EGY": 409,
+    "parcial EGY": 75,
+    "decisiva ISR": 43,
+    "parcial ISR": 31,
+    "marginal EGY": 6
+   },
+   "ponte": 0.3983333333333333,
+   "ponteViva": 0.11166666666666666,
+   "oeste0": 0.65,
+   "oeste": 2.0883333333333334,
+   "perdasISR": 2.8366666666666664,
+   "perdasEGY": 3.5616666666666665,
+   "obj": 0.4
+  }
+ },
+ {
+  "grupo": "expectimax",
+  "nome": "ISR exp=off × EGY exp=off",
+  "n": 600,
+  "pesos": {
+   "ISR": {
+    "expectimax": false
+   },
+   "EGY": {
+    "expectimax": false
+   }
+  },
+  "resumo": {
+   "n": 600,
+   "isrW": 190,
+   "egyW": 410,
+   "isr": [
+    0.31666666666666665,
+    0.2807114361929764,
+    0.35495460602736756
+   ],
+   "egy": [
+    0.6833333333333333,
+    0.6450453939726326,
+    0.7192885638070237
+   ],
+   "scoreISR": -0.1889999999999988,
+   "tipos": {
+    "decisiva EGY": 36,
+    "decisiva ISR": 99,
+    "parcial EGY": 365,
+    "parcial ISR": 60,
+    "marginal ISR": 31,
+    "marginal EGY": 9
+   },
+   "ponte": 0.45166666666666666,
+   "ponteViva": 0.295,
+   "oeste0": 0.5566666666666666,
+   "oeste": 3.9183333333333334,
+   "perdasISR": 1.0483333333333333,
+   "perdasEGY": 2.1533333333333333,
+   "obj": 0.75
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "longe do inimigo (orig.) | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 42,
+   "egyW": 258,
+   "isr": [
+    0.14,
+    0.1052707698510638,
+    0.18383249974730587
+   ],
+   "egy": [
+    0.86,
+    0.8161675002526941,
+    0.8947292301489361
+   ],
+   "scoreISR": -0.7306666666666661,
+   "tipos": {
+    "decisiva EGY": 230,
+    "parcial EGY": 25,
+    "marginal ISR": 15,
+    "parcial ISR": 12,
+    "decisiva ISR": 15,
+    "marginal EGY": 3
+   },
+   "ponte": 0.37333333333333335,
+   "ponteViva": 0.13,
+   "oeste0": 0.72,
+   "oeste": 1.5933333333333333,
+   "perdasISR": 2.92,
+   "perdasEGY": 4.776666666666666,
+   "obj": 0.30333333333333334
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "longe do inimigo (orig.) | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 31,
+   "egyW": 269,
+   "isr": [
+    0.10333333333333333,
+    0.07375612591943384,
+    0.14294099521210313
+   ],
+   "egy": [
+    0.8966666666666666,
+    0.8570590047878968,
+    0.9262438740805661
+   ],
+   "scoreISR": -0.7859999999999994,
+   "tipos": {
+    "decisiva EGY": 238,
+    "parcial EGY": 26,
+    "marginal ISR": 11,
+    "parcial ISR": 10,
+    "decisiva ISR": 10,
+    "marginal EGY": 5
+   },
+   "ponte": 0.37333333333333335,
+   "ponteViva": 0.13666666666666666,
+   "oeste0": 0.7266666666666667,
+   "oeste": 1.3,
+   "perdasISR": 3.1066666666666665,
+   "perdasEGY": 4.846666666666667,
+   "obj": 0.23666666666666666
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "longe do inimigo (orig.) | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 29,
+   "egyW": 271,
+   "isr": [
+    0.09666666666666666,
+    0.06814985592393716,
+    0.13538251094090295
+   ],
+   "egy": [
+    0.9033333333333333,
+    0.8646174890590971,
+    0.9318501440760628
+   ],
+   "scoreISR": -0.8029999999999995,
+   "tipos": {
+    "decisiva EGY": 242,
+    "parcial EGY": 25,
+    "marginal ISR": 11,
+    "decisiva ISR": 8,
+    "parcial ISR": 10,
+    "marginal EGY": 4
+   },
+   "ponte": 0.37333333333333335,
+   "ponteViva": 0.14,
+   "oeste0": 0.7266666666666667,
+   "oeste": 1.2633333333333334,
+   "perdasISR": 3.1,
+   "perdasEGY": 4.88,
+   "obj": 0.21
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "longe do inimigo (orig.) | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.8156666666666661,
+   "tipos": {
+    "decisiva EGY": 243,
+    "parcial EGY": 27,
+    "marginal ISR": 12,
+    "decisiva ISR": 7,
+    "parcial ISR": 8,
+    "marginal EGY": 3
+   },
+   "ponte": 0.37333333333333335,
+   "ponteViva": 0.14,
+   "oeste0": 0.7266666666666667,
+   "oeste": 1.2666666666666666,
+   "perdasISR": 3.0833333333333335,
+   "perdasEGY": 4.863333333333333,
+   "obj": 0.19
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "mais perto da engenharia | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteEng": 1,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 18,
+   "egyW": 282,
+   "isr": [
+    0.06,
+    0.038286055915477436,
+    0.09284016248252996
+   ],
+   "egy": [
+    0.94,
+    0.90715983751747,
+    0.9617139440845225
+   ],
+   "scoreISR": -0.7659999999999986,
+   "tipos": {
+    "decisiva EGY": 187,
+    "parcial EGY": 93,
+    "marginal EGY": 2,
+    "decisiva ISR": 10,
+    "parcial ISR": 4,
+    "marginal ISR": 4
+   },
+   "ponte": 0.41,
+   "ponteViva": 0.20666666666666667,
+   "oeste0": 0.6566666666666666,
+   "oeste": 1.2433333333333334,
+   "perdasISR": 2.66,
+   "perdasEGY": 4.1033333333333335,
+   "obj": 0.15666666666666668
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "mais perto da engenharia | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteEng": 1,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 13,
+   "egyW": 287,
+   "isr": [
+    0.043333333333333335,
+    0.025496203603204263,
+    0.07271812912806098
+   ],
+   "egy": [
+    0.9566666666666667,
+    0.927281870871939,
+    0.9745037963967957
+   ],
+   "scoreISR": -0.8039999999999986,
+   "tipos": {
+    "decisiva EGY": 193,
+    "parcial EGY": 93,
+    "marginal EGY": 1,
+    "parcial ISR": 4,
+    "marginal ISR": 5,
+    "decisiva ISR": 4
+   },
+   "ponte": 0.41,
+   "ponteViva": 0.2,
+   "oeste0": 0.6566666666666666,
+   "oeste": 1.0933333333333333,
+   "perdasISR": 2.736666666666667,
+   "perdasEGY": 4.12,
+   "obj": 0.11666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "mais perto da engenharia | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteEng": 1,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 15,
+   "egyW": 285,
+   "isr": [
+    0.05,
+    0.030531367290852585,
+    0.08084771970710952
+   ],
+   "egy": [
+    0.95,
+    0.9191522802928904,
+    0.9694686327091473
+   ],
+   "scoreISR": -0.7966666666666653,
+   "tipos": {
+    "decisiva EGY": 190,
+    "parcial EGY": 93,
+    "marginal EGY": 2,
+    "parcial ISR": 5,
+    "marginal ISR": 8,
+    "decisiva ISR": 2
+   },
+   "ponte": 0.41,
+   "ponteViva": 0.21333333333333335,
+   "oeste0": 0.6566666666666666,
+   "oeste": 1.0833333333333333,
+   "perdasISR": 2.72,
+   "perdasEGY": 4.13,
+   "obj": 0.11
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "mais perto da engenharia | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteEng": 1,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 15,
+   "egyW": 285,
+   "isr": [
+    0.05,
+    0.030531367290852585,
+    0.08084771970710952
+   ],
+   "egy": [
+    0.95,
+    0.9191522802928904,
+    0.9694686327091473
+   ],
+   "scoreISR": -0.7999999999999985,
+   "tipos": {
+    "decisiva EGY": 191,
+    "parcial EGY": 93,
+    "marginal EGY": 1,
+    "parcial ISR": 4,
+    "marginal ISR": 9,
+    "decisiva ISR": 2
+   },
+   "ponte": 0.41,
+   "ponteViva": 0.21666666666666667,
+   "oeste0": 0.6566666666666666,
+   "oeste": 1.0633333333333332,
+   "perdasISR": 2.73,
+   "perdasEGY": 4.123333333333333,
+   "obj": 0.10666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "perto dos objetivos | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteObj": 1,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.7479999999999989,
+   "tipos": {
+    "decisiva EGY": 193,
+    "parcial EGY": 79,
+    "marginal EGY": 1,
+    "marginal ISR": 13,
+    "decisiva ISR": 10,
+    "parcial ISR": 4
+   },
+   "ponte": 0.42333333333333334,
+   "ponteViva": 0.23666666666666666,
+   "oeste0": 0.67,
+   "oeste": 1.2666666666666666,
+   "perdasISR": 2.526666666666667,
+   "perdasEGY": 4.25,
+   "obj": 0.19666666666666666
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "perto dos objetivos | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteObj": 1,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 22,
+   "egyW": 278,
+   "isr": [
+    0.07333333333333333,
+    0.048923631132474436,
+    0.10853209579892667
+   ],
+   "egy": [
+    0.9266666666666666,
+    0.8914679042010732,
+    0.9510763688675256
+   ],
+   "scoreISR": -0.7859999999999989,
+   "tipos": {
+    "decisiva EGY": 197,
+    "parcial EGY": 79,
+    "marginal EGY": 2,
+    "marginal ISR": 16,
+    "parcial ISR": 4,
+    "decisiva ISR": 2
+   },
+   "ponte": 0.42333333333333334,
+   "ponteViva": 0.24,
+   "oeste0": 0.67,
+   "oeste": 1.0466666666666666,
+   "perdasISR": 2.6266666666666665,
+   "perdasEGY": 4.303333333333334,
+   "obj": 0.13333333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "perto dos objetivos | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteObj": 1,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 24,
+   "egyW": 276,
+   "isr": [
+    0.08,
+    0.05434646978454494,
+    0.11627401141355304
+   ],
+   "egy": [
+    0.92,
+    0.883725988586447,
+    0.9456535302154552
+   ],
+   "scoreISR": -0.7809999999999989,
+   "tipos": {
+    "decisiva EGY": 195,
+    "parcial EGY": 79,
+    "marginal EGY": 2,
+    "marginal ISR": 19,
+    "parcial ISR": 5
+   },
+   "ponte": 0.42333333333333334,
+   "ponteViva": 0.26,
+   "oeste0": 0.67,
+   "oeste": 1.0366666666666666,
+   "perdasISR": 2.6166666666666667,
+   "perdasEGY": 4.306666666666667,
+   "obj": 0.13333333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "perto dos objetivos | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 0,
+    "ponteObj": 1,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 21,
+   "egyW": 279,
+   "isr": [
+    0.07,
+    0.04623659396060609,
+    0.10463675583744661
+   ],
+   "egy": [
+    0.93,
+    0.8953632441625534,
+    0.953763406039394
+   ],
+   "scoreISR": -0.7946666666666654,
+   "tipos": {
+    "decisiva EGY": 197,
+    "marginal EGY": 3,
+    "parcial EGY": 79,
+    "marginal ISR": 19,
+    "parcial ISR": 2
+   },
+   "ponte": 0.42333333333333334,
+   "ponteViva": 0.25333333333333335,
+   "oeste0": 0.67,
+   "oeste": 0.9933333333333333,
+   "perdasISR": 2.6366666666666667,
+   "perdasEGY": 4.3,
+   "obj": 0.10666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "misto | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "ponteEng": 0.5,
+    "ponteObj": 0.5,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.7636666666666658,
+   "tipos": {
+    "decisiva EGY": 201,
+    "parcial EGY": 69,
+    "marginal ISR": 12,
+    "parcial ISR": 11,
+    "decisiva ISR": 4,
+    "marginal EGY": 3
+   },
+   "ponte": 0.43333333333333335,
+   "ponteViva": 0.18666666666666668,
+   "oeste0": 0.6833333333333333,
+   "oeste": 1.21,
+   "perdasISR": 2.69,
+   "perdasEGY": 4.373333333333333,
+   "obj": 0.17666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "misto | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "ponteEng": 0.5,
+    "ponteObj": 0.5,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 18,
+   "egyW": 282,
+   "isr": [
+    0.06,
+    0.038286055915477436,
+    0.09284016248252996
+   ],
+   "egy": [
+    0.94,
+    0.90715983751747,
+    0.9617139440845225
+   ],
+   "scoreISR": -0.8116666666666656,
+   "tipos": {
+    "decisiva EGY": 210,
+    "parcial EGY": 68,
+    "marginal ISR": 13,
+    "decisiva ISR": 4,
+    "marginal EGY": 4,
+    "parcial ISR": 1
+   },
+   "ponte": 0.43333333333333335,
+   "ponteViva": 0.19,
+   "oeste0": 0.68,
+   "oeste": 1.0466666666666666,
+   "perdasISR": 2.756666666666667,
+   "perdasEGY": 4.4,
+   "obj": 0.13
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "misto | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "ponteEng": 0.5,
+    "ponteObj": 0.5,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 17,
+   "egyW": 283,
+   "isr": [
+    0.056666666666666664,
+    0.03567717591318777,
+    0.08886666535147117
+   ],
+   "egy": [
+    0.9433333333333334,
+    0.9111333346485289,
+    0.9643228240868122
+   ],
+   "scoreISR": -0.818999999999999,
+   "tipos": {
+    "decisiva EGY": 208,
+    "parcial EGY": 72,
+    "marginal ISR": 14,
+    "decisiva ISR": 1,
+    "marginal EGY": 3,
+    "parcial ISR": 2
+   },
+   "ponte": 0.43333333333333335,
+   "ponteViva": 0.19666666666666666,
+   "oeste0": 0.6733333333333333,
+   "oeste": 1.0133333333333334,
+   "perdasISR": 2.7466666666666666,
+   "perdasEGY": 4.433333333333334,
+   "obj": 0.11666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "misto | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteInimigo": 1,
+    "ponteEng": 0.5,
+    "ponteObj": 0.5,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 14,
+   "egyW": 286,
+   "isr": [
+    0.04666666666666667,
+    0.02799867455083086,
+    0.07679803531378282
+   ],
+   "egy": [
+    0.9533333333333334,
+    0.9232019646862172,
+    0.9720013254491692
+   ],
+   "scoreISR": -0.8296666666666657,
+   "tipos": {
+    "decisiva EGY": 210,
+    "parcial EGY": 72,
+    "marginal EGY": 4,
+    "marginal ISR": 11,
+    "decisiva ISR": 1,
+    "parcial ISR": 2
+   },
+   "ponte": 0.43333333333333335,
+   "ponteViva": 0.19666666666666666,
+   "oeste0": 0.6733333333333333,
+   "oeste": 0.9866666666666667,
+   "perdasISR": 2.7533333333333334,
+   "perdasEGY": 4.446666666666666,
+   "obj": 0.11333333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor norte (8-10) | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 8,
+    "ponteLinhaMax": 10,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 42,
+   "egyW": 258,
+   "isr": [
+    0.14,
+    0.1052707698510638,
+    0.18383249974730587
+   ],
+   "egy": [
+    0.86,
+    0.8161675002526941,
+    0.8947292301489361
+   ],
+   "scoreISR": -0.6806666666666662,
+   "tipos": {
+    "decisiva EGY": 194,
+    "parcial ISR": 18,
+    "marginal EGY": 6,
+    "marginal ISR": 12,
+    "parcial EGY": 58,
+    "decisiva ISR": 12
+   },
+   "ponte": 0.33,
+   "ponteViva": 0.1,
+   "oeste0": 0.71,
+   "oeste": 1.6366666666666667,
+   "perdasISR": 2.4633333333333334,
+   "perdasEGY": 4.59,
+   "obj": 0.31333333333333335
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor norte (8-10) | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 8,
+    "ponteLinhaMax": 10,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 34,
+   "egyW": 266,
+   "isr": [
+    0.11333333333333333,
+    0.082244014467736,
+    0.15420023806384625
+   ],
+   "egy": [
+    0.8866666666666667,
+    0.8457997619361538,
+    0.917755985532264
+   ],
+   "scoreISR": -0.7319999999999997,
+   "tipos": {
+    "decisiva EGY": 197,
+    "marginal EGY": 10,
+    "parcial EGY": 59,
+    "marginal ISR": 18,
+    "parcial ISR": 14,
+    "decisiva ISR": 2
+   },
+   "ponte": 0.33,
+   "ponteViva": 0.12,
+   "oeste0": 0.71,
+   "oeste": 1.4433333333333334,
+   "perdasISR": 2.5766666666666667,
+   "perdasEGY": 4.713333333333333,
+   "obj": 0.19666666666666666
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor norte (8-10) | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 8,
+    "ponteLinhaMax": 10,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.7559999999999995,
+   "tipos": {
+    "decisiva EGY": 197,
+    "marginal ISR": 19,
+    "marginal EGY": 15,
+    "parcial EGY": 61,
+    "parcial ISR": 6,
+    "decisiva ISR": 2
+   },
+   "ponte": 0.33,
+   "ponteViva": 0.12,
+   "oeste0": 0.71,
+   "oeste": 1.39,
+   "perdasISR": 2.5833333333333335,
+   "perdasEGY": 4.733333333333333,
+   "obj": 0.16
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor norte (8-10) | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 8,
+    "ponteLinhaMax": 10,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.7633333333333326,
+   "tipos": {
+    "decisiva EGY": 200,
+    "marginal EGY": 12,
+    "parcial EGY": 61,
+    "marginal ISR": 18,
+    "parcial ISR": 8,
+    "decisiva ISR": 1
+   },
+   "ponte": 0.33,
+   "ponteViva": 0.12,
+   "oeste0": 0.71,
+   "oeste": 1.33,
+   "perdasISR": 2.63,
+   "perdasEGY": 4.746666666666667,
+   "obj": 0.16333333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor centro (11-13) | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 11,
+    "ponteLinhaMax": 13,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 36,
+   "egyW": 264,
+   "isr": [
+    0.12,
+    0.08795033863213894,
+    0.16165866816614016
+   ],
+   "egy": [
+    0.88,
+    0.8383413318338598,
+    0.9120496613678611
+   ],
+   "scoreISR": -0.7459999999999994,
+   "tipos": {
+    "decisiva EGY": 220,
+    "parcial EGY": 41,
+    "marginal ISR": 13,
+    "parcial ISR": 13,
+    "decisiva ISR": 10,
+    "marginal EGY": 3
+   },
+   "ponte": 0.3333333333333333,
+   "ponteViva": 0.11333333333333333,
+   "oeste0": 0.7633333333333333,
+   "oeste": 1.3766666666666667,
+   "perdasISR": 2.933333333333333,
+   "perdasEGY": 4.133333333333334,
+   "obj": 0.25
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor centro (11-13) | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 11,
+    "ponteLinhaMax": 13,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 33,
+   "egyW": 267,
+   "isr": [
+    0.11,
+    0.07940480726853252,
+    0.1504570681297013
+   ],
+   "egy": [
+    0.89,
+    0.8495429318702987,
+    0.9205951927314675
+   ],
+   "scoreISR": -0.7719999999999992,
+   "tipos": {
+    "decisiva EGY": 226,
+    "marginal ISR": 17,
+    "parcial EGY": 40,
+    "decisiva ISR": 10,
+    "parcial ISR": 6,
+    "marginal EGY": 1
+   },
+   "ponte": 0.3333333333333333,
+   "ponteViva": 0.13666666666666666,
+   "oeste0": 0.76,
+   "oeste": 1.26,
+   "perdasISR": 2.99,
+   "perdasEGY": 4.246666666666667,
+   "obj": 0.22
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor centro (11-13) | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 11,
+    "ponteLinhaMax": 13,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 27,
+   "egyW": 273,
+   "isr": [
+    0.09,
+    0.06258980739496589,
+    0.12777780520317736
+   ],
+   "egy": [
+    0.91,
+    0.8722221947968226,
+    0.9374101926050341
+   ],
+   "scoreISR": -0.8059999999999993,
+   "tipos": {
+    "decisiva EGY": 231,
+    "marginal ISR": 16,
+    "parcial EGY": 40,
+    "decisiva ISR": 6,
+    "parcial ISR": 5,
+    "marginal EGY": 2
+   },
+   "ponte": 0.3333333333333333,
+   "ponteViva": 0.11666666666666667,
+   "oeste0": 0.7633333333333333,
+   "oeste": 1.1466666666666667,
+   "perdasISR": 3.046666666666667,
+   "perdasEGY": 4.31,
+   "obj": 0.17333333333333334
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor centro (11-13) | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 11,
+    "ponteLinhaMax": 13,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 28,
+   "egyW": 272,
+   "isr": [
+    0.09333333333333334,
+    0.06536379092760147,
+    0.13158619880389022
+   ],
+   "egy": [
+    0.9066666666666666,
+    0.8684138011961098,
+    0.9346362090723985
+   ],
+   "scoreISR": -0.7953333333333328,
+   "tipos": {
+    "decisiva EGY": 229,
+    "marginal ISR": 13,
+    "parcial EGY": 40,
+    "marginal EGY": 3,
+    "decisiva ISR": 6,
+    "parcial ISR": 9
+   },
+   "ponte": 0.3333333333333333,
+   "ponteViva": 0.11666666666666667,
+   "oeste0": 0.7633333333333333,
+   "oeste": 1.1233333333333333,
+   "perdasISR": 3.0766666666666667,
+   "perdasEGY": 4.296666666666667,
+   "obj": 0.19333333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor sul (14-16) | guarda 0",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 14,
+    "ponteLinhaMax": 16,
+    "guardaPonte": 0
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 49,
+   "egyW": 251,
+   "isr": [
+    0.16333333333333333,
+    0.12580582169498175,
+    0.2093740878368269
+   ],
+   "egy": [
+    0.8366666666666667,
+    0.7906259121631731,
+    0.8741941783050182
+   ],
+   "scoreISR": -0.6916666666666667,
+   "tipos": {
+    "decisiva EGY": 229,
+    "parcial ISR": 26,
+    "decisiva ISR": 17,
+    "marginal ISR": 6,
+    "parcial EGY": 21,
+    "marginal EGY": 1
+   },
+   "ponte": 0.36,
+   "ponteViva": 0.12666666666666668,
+   "oeste0": 0.67,
+   "oeste": 1.9133333333333333,
+   "perdasISR": 2.8933333333333335,
+   "perdasEGY": 4.98,
+   "obj": 0.39666666666666667
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor sul (14-16) | guarda 1",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 14,
+    "ponteLinhaMax": 16,
+    "guardaPonte": 1
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 49,
+   "egyW": 251,
+   "isr": [
+    0.16333333333333333,
+    0.12580582169498175,
+    0.2093740878368269
+   ],
+   "egy": [
+    0.8366666666666667,
+    0.7906259121631731,
+    0.8741941783050182
+   ],
+   "scoreISR": -0.6923333333333332,
+   "tipos": {
+    "decisiva EGY": 229,
+    "parcial ISR": 23,
+    "decisiva ISR": 18,
+    "marginal ISR": 8,
+    "parcial EGY": 21,
+    "marginal EGY": 1
+   },
+   "ponte": 0.36,
+   "ponteViva": 0.14,
+   "oeste0": 0.67,
+   "oeste": 1.6833333333333333,
+   "perdasISR": 3.0166666666666666,
+   "perdasEGY": 5.043333333333333,
+   "obj": 0.37333333333333335
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor sul (14-16) | guarda 2",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 14,
+    "ponteLinhaMax": 16,
+    "guardaPonte": 2
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 41,
+   "egyW": 259,
+   "isr": [
+    0.13666666666666666,
+    0.10236459725248649,
+    0.18015629521253473
+   ],
+   "egy": [
+    0.8633333333333333,
+    0.8198437047874653,
+    0.8976354027475134
+   ],
+   "scoreISR": -0.7533333333333332,
+   "tipos": {
+    "decisiva EGY": 237,
+    "marginal ISR": 17,
+    "parcial ISR": 13,
+    "decisiva ISR": 11,
+    "parcial EGY": 21,
+    "marginal EGY": 1
+   },
+   "ponte": 0.36,
+   "ponteViva": 0.13333333333333333,
+   "oeste0": 0.67,
+   "oeste": 1.5766666666666667,
+   "perdasISR": 3.0533333333333332,
+   "perdasEGY": 5.016666666666667,
+   "obj": 0.2833333333333333
+  }
+ },
+ {
+  "grupo": "ponte",
+  "nome": "setor sul (14-16) | guarda 3",
+  "n": 300,
+  "pesos": {
+   "ISR": {
+    "ponteLinhaMin": 14,
+    "ponteLinhaMax": 16,
+    "guardaPonte": 3
+   }
+  },
+  "resumo": {
+   "n": 300,
+   "isrW": 42,
+   "egyW": 258,
+   "isr": [
+    0.14,
+    0.1052707698510638,
+    0.18383249974730587
+   ],
+   "egy": [
+    0.86,
+    0.8161675002526941,
+    0.8947292301489361
+   ],
+   "scoreISR": -0.7499999999999998,
+   "tipos": {
+    "decisiva EGY": 235,
+    "marginal ISR": 18,
+    "parcial EGY": 23,
+    "parcial ISR": 14,
+    "decisiva ISR": 10
+   },
+   "ponte": 0.36,
+   "ponteViva": 0.14,
+   "oeste0": 0.67,
+   "oeste": 1.5633333333333332,
+   "perdasISR": 3.05,
+   "perdasEGY": 5.076666666666667,
+   "obj": 0.28
+  }
+ }
+]

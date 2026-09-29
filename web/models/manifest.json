@@ -1,0 +1,13 @@
+{
+  "ISR": [
+    { "id": "retreinado_mlp", "nome": "MLP re-treinado vs defensor atual — 90% vs heurística (explorável por defensores neurais)", "arch": "mlp", "url": "models/ISR_v3.json" },
+    { "id": "selfplay_mlp", "nome": "Self-play — MLP (20% vs heurística atual)", "arch": "mlp", "url": "models/ISR_selfplay.json" },
+    { "id": "faseA_mlp", "nome": "Fase A — MLP (14% vs heurística atual; 87% vs a de pesos fixos)", "arch": "mlp", "url": "models/ISR.json" }
+  ],
+  "EGY": [
+    { "id": "retreinado_gnn", "nome": "GNN re-treinado — defensor de equilíbrio (melhor atacante conhecido: 17%)", "arch": "gnn", "url": "models/EGY_v2.json" },
+    { "id": "psro_gnn", "nome": "GNN PSRO — anula a heurística otimizada de Israel", "arch": "gnn", "url": "models/EGY_psro1.json" },
+    { "id": "gnn", "nome": "Fase A — GNN (87% vs heurística atual)", "arch": "gnn", "url": "models/EGY_gnn.json" },
+    { "id": "faseA_mlp", "nome": "Fase A — MLP (100% vs heurística atual)", "arch": "mlp", "url": "models/EGY.json" }
+  ]
+}

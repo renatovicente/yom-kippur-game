@@ -1,0 +1,20 @@
+# checkpoints de treino (3,8 GB) — os modelos exportados ficam em web/models/
+rl/runs/
+# modelos intermediários da revisita (exceto o referenciado pela matriz final)
+rl/exp/modelos/*
+!rl/exp/modelos/ISR_psro1_0080.json
+# artefatos da extração do mapa e documentação original do jogo (direitos de terceiros)
+work/
+files/
+# arquivos locais de ferramentas
+.claude/settings.local.json
+.gstack/
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+# intermediários de LaTeX
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc

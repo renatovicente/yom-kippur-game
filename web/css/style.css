@@ -1,0 +1,181 @@
+:root {
+  --areia: #efe7d2;
+  --tinta: #2b2418;
+  --egy: #e88ca0;
+  --egy-escuro: #8a4a3a;
+  --isr: #8ec3e8;
+  --isr-escuro: #3d5a4a;
+  --destaque: #d9442b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #c9bda0;
+  color: var(--tinta);
+}
+.hidden { display: none !important; }
+
+/* ---------- overlays ---------- */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(30, 24, 12, .75);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 50;
+}
+.painel-setup {
+  background: var(--areia);
+  border: 3px solid var(--tinta);
+  box-shadow: 8px 8px 0 rgba(0,0,0,.4);
+  max-width: 640px; max-height: 90vh; overflow: auto;
+  padding: 28px 36px;
+}
+.painel-setup h1 {
+  margin: 0; letter-spacing: 2px; font-size: 28px;
+  border-bottom: 3px double var(--tinta); padding-bottom: 8px;
+}
+.painel-setup .sub { margin: 6px 0 2px; font-style: italic; }
+.painel-setup .desc { font-size: 14px; }
+.modos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+.modos button {
+  font-family: inherit; font-size: 16px; padding: 14px 10px;
+  background: #fff; border: 2px solid var(--tinta); cursor: pointer;
+}
+.modos button:hover { background: #ffe9b0; }
+.modos button small { color: #666; }
+.ladosSel { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+.ladoSel { border: 2px solid var(--tinta); padding: 6px 12px 8px; }
+.ladoSel legend { font-size: 15px; font-weight: bold; padding: 0 6px; }
+.ladoSel label { display: block; margin: 4px 0; cursor: pointer; font-size: 14px; }
+.ladoSel select { font-family: inherit; font-size: 12px; margin-left: 4px; max-width: 200px; }
+.ladoSel select:disabled { color: #aaa; }
+.nota-ia { margin: 6px 0 0; font-size: 13px; color: var(--destaque); font-style: italic; }
+details { margin: 8px 0; font-size: 14px; }
+.regras-resumo { max-height: 260px; overflow: auto; padding-right: 8px; }
+.guiaLado { margin: 10px 0 4px; border-bottom: 1px solid #ccc; font-size: 14px; }
+.guiaLinha { display: flex; align-items: center; gap: 6px; margin: 3px 0; font-size: 13px; }
+.guiaLinha svg { flex: none; }
+.guiaLinha .unidade { cursor: default; }
+
+/* ---------- layout do jogo ---------- */
+#app { display: flex; flex-direction: column; height: 100vh; }
+header {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--tinta); color: var(--areia);
+  padding: 6px 14px;
+}
+#faseBanner { font-size: 17px; font-weight: bold; flex: 1; }
+#rodadas { display: flex; gap: 4px; }
+#rodadas span {
+  width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--areia); font-size: 14px;
+}
+#rodadas span.atual { background: var(--destaque); font-weight: bold; }
+.acoes { display: flex; align-items: center; gap: 8px; }
+.acoes button {
+  font-family: inherit; font-size: 15px; padding: 6px 14px;
+  background: var(--areia); border: none; cursor: pointer;
+}
+.acoes button:hover { background: #ffe9b0; }
+.acoes button:disabled { opacity: .45; cursor: default; }
+#togglePasso { color: var(--areia); font-size: 13px; cursor: pointer; user-select: none; }
+#passoControles button { background: #ffe9b0; }
+#btnPasso { font-weight: bold; }
+#btnFase.destaque { background: var(--destaque); color: var(--areia); animation: pulsar 1.3s infinite; }
+@keyframes pulsar { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
+main { flex: 1; display: flex; min-height: 0; }
+#boardWrap { flex: 1; overflow: auto; background: #b9ac8c; }
+#board { display: block; }
+
+#sidebar {
+  width: 340px; overflow-y: auto; padding: 10px;
+  background: var(--areia); border-left: 3px solid var(--tinta);
+}
+.cartao {
+  background: #fff; border: 1px solid var(--tinta);
+  padding: 8px 10px; margin-bottom: 10px; font-size: 14px;
+}
+.cartao h3 { margin: 0 0 6px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #ccc; }
+#instrucao { background: #fff8dc; font-size: 14px; }
+#log { max-height: 220px; overflow-y: auto; font-size: 12.5px; font-family: 'Courier New', monospace; }
+#log p { margin: 2px 0; }
+#pool .uplaca, #combates .uplaca { cursor: pointer; }
+
+/* placa de unidade no painel */
+.uplaca {
+  display: inline-block; margin: 3px; padding: 4px 8px;
+  border: 2px solid var(--tinta); font-size: 13px; background: var(--egy);
+}
+.uplaca.isr { background: var(--isr); }
+.uplaca.sel { outline: 3px solid var(--destaque); }
+.uplaca.baixas { opacity: .75; border-style: dashed; }
+
+/* combates */
+.combate {
+  border: 1px solid #999; margin: 6px 0; padding: 6px; font-size: 13px;
+}
+.combate .odds { font-weight: bold; }
+.combate button {
+  font-family: inherit; font-size: 12px; margin: 2px; cursor: pointer;
+}
+
+/* ---------- SVG ---------- */
+.hex { stroke: #6b5d40; stroke-width: 1; cursor: pointer; }
+.hex.acidentado { fill: #b5734a; }
+.hex.bosque { fill: #69a35e; }
+.hex.dunas { fill: #ecd36a; }
+.hex.agua { fill: #7db4dd; }
+.hex.cidade { fill: #f3efe4; }
+.hex.aberto { fill: #f3ecd8; }
+.hex.alcancavel { stroke: #1c7c1c; stroke-width: 2.5; fill-opacity: .65; }
+.hex.alvoEntrada { stroke: var(--destaque); stroke-width: 3; }
+.hex.selecionada { stroke: var(--destaque); stroke-width: 3; }
+.hex.opcao { stroke: #c8a200; stroke-width: 4; }
+.hexlabel { font-size: 7px; fill: #6b5d40; pointer-events: none; font-family: monospace; }
+.maplabel { font-size: 13px; font-style: italic; fill: #234; pointer-events: none; font-family: Georgia, serif; }
+.estrada { stroke: #c03a22; stroke-width: 4; fill: none; stroke-linecap: round; pointer-events: none; }
+.aguadoce { stroke: #1f6b2a; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.canalSuez { stroke: #7db4dd; stroke-width: 11; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.ponte { stroke: #111; stroke-width: 2.4; fill: none; pointer-events: none; }
+.cidadePts { fill: #333; pointer-events: none; }
+
+/* peças */
+.unidade { cursor: pointer; }
+.unidade rect.corpo {
+  stroke: #222; stroke-width: 1.2; rx: 3;
+}
+.unidade.egy rect.corpo { fill: var(--egy); }
+.unidade.isr rect.corpo { fill: var(--isr); }
+.unidade.baixas rect.corpo { fill-opacity: .6; stroke-dasharray: 3 2; }
+.unidade text { font-size: 9px; font-weight: bold; font-family: Arial, sans-serif; pointer-events: none; }
+.unidade .sil { stroke: #111; stroke-width: 1.5; fill: none; pointer-events: none; stroke-linecap: round; }
+.unidade .silf { fill: #111; stroke: none; pointer-events: none; }
+.unidade.baixas .sil { stroke: #fdf6e3; }
+.unidade.baixas .silf { fill: #fdf6e3; }
+.unidade.sel rect.corpo { stroke: var(--destaque); stroke-width: 3; }
+.unidade.engajada rect.corpo { stroke: #d00; stroke-width: 2; }
+.unidade.artUsada { opacity: .55; }
+.custoTag { font-size: 9px; fill: #064; font-weight: bold; font-family: Arial; pointer-events: none; }
+/* destaque dos combates no tabuleiro */
+.combHex { fill: none; stroke-width: 4; pointer-events: none; }
+.combHex.combAtq { stroke: #c0152f; }                 /* atacante */
+.combHex.combDef { stroke: #1f4fd0; stroke-dasharray: 6 3; }  /* defensor */
+.combHex.combArt { stroke: #d98a00; stroke-dasharray: 2 4; }  /* artilharia de apoio */
+.combLinha { stroke: #c0152f; stroke-width: 2; opacity: .6; pointer-events: none; }
+.combBadge { fill: #c0152f; stroke: #fff; stroke-width: 1.5; pointer-events: none; }
+.combNum { font-size: 11px; font-weight: bold; fill: #fff; font-family: Arial; pointer-events: none; }
+
+/* modal */
+.painel-modal {
+  background: var(--areia); border: 3px solid var(--tinta);
+  padding: 18px 24px; max-width: 560px; max-height: 80vh; overflow: auto;
+  box-shadow: 8px 8px 0 rgba(0,0,0,.4);
+}
+.painel-modal h3 { margin-top: 0; }
+.painel-modal button {
+  font-family: inherit; display: block; width: 100%; text-align: left;
+  margin: 6px 0; padding: 8px 10px; font-size: 14px;
+  background: #fff; border: 2px solid var(--tinta); cursor: pointer;
+}
+.painel-modal button:hover { background: #ffe9b0; }
+.dado { font-size: 30px; letter-spacing: 6px; }

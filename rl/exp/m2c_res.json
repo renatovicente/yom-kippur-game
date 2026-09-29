@@ -1,0 +1,499 @@
+{
+ "cfg": {
+  "n": 60,
+  "seed0": 7000000,
+  "atacantes": {
+   "H0 heur padrão": {
+    "tipo": "heur"
+   },
+   "H1 heur sem exp": {
+    "tipo": "heur",
+    "pesos": {
+     "expectimax": false
+    }
+   },
+   "HC heur CEM": {
+    "tipo": "heur",
+    "pesos": {
+     "expectimax": false,
+     "dist": 4.4594342991494536,
+     "alvo": 74.57465533065081,
+     "ev": 56.52531484995036,
+     "apoioEngaja": 82.52707527061918,
+     "exposicao": 36.0798827542647,
+     "expRazao": 1.6011904318032442,
+     "terreno": 3.014059182622595,
+     "ponteInimigo": 1.255062034499016,
+     "ponteEng": 0.019645145808569388,
+     "ponteObj": 0.3196408058381411,
+     "guardaPonte": 0.2312790393270731
+    }
+   },
+   "NA MLP Fase A": {
+    "tipo": "neural",
+    "modelo": "web/models/ISR.json"
+   },
+   "N3 MLP re-treinado": {
+    "tipo": "neural",
+    "modelo": "web/models/ISR_v3.json"
+   },
+   "P3 PUCT re-treinado (união)": {
+    "tipo": "puct",
+    "valor": "web/models/ISR_v3.json",
+    "sims": 24,
+    "prof": 3,
+    "prior": "uniao"
+   }
+  },
+  "defensores": {
+   "D0 heur padrão": {
+    "tipo": "heur"
+   },
+   "G1 GNN antigo": {
+    "tipo": "neural",
+    "modelo": "web/models/EGY_gnn.json"
+   },
+   "G2 GNN re-treinado": {
+    "tipo": "neural",
+    "modelo": "web/models/EGY_v2.json"
+   },
+   "PD PUCT defensor (prior heur.)": {
+    "tipo": "puct",
+    "valor": "web/models/EGY_v2.json",
+    "sims": 24,
+    "prof": 3,
+    "prior": "heuristica"
+   },
+   "PDp PUCT defensor (prior pol.)": {
+    "tipo": "puct",
+    "valor": "web/models/EGY_v2.json",
+    "sims": 24,
+    "prof": 3,
+    "prior": "politica"
+   }
+  },
+  "pares": [
+   [
+    "P3 PUCT re-treinado (união)",
+    "D0 heur padrão"
+   ],
+   [
+    "P3 PUCT re-treinado (união)",
+    "G1 GNN antigo"
+   ],
+   [
+    "P3 PUCT re-treinado (união)",
+    "G2 GNN re-treinado"
+   ],
+   [
+    "H0 heur padrão",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "H1 heur sem exp",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "HC heur CEM",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "NA MLP Fase A",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "N3 MLP re-treinado",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "P3 PUCT re-treinado (união)",
+    "PD PUCT defensor (prior heur.)"
+   ],
+   [
+    "H1 heur sem exp",
+    "PDp PUCT defensor (prior pol.)"
+   ],
+   [
+    "HC heur CEM",
+    "PDp PUCT defensor (prior pol.)"
+   ],
+   [
+    "N3 MLP re-treinado",
+    "PDp PUCT defensor (prior pol.)"
+   ]
+  ],
+  "nPar": {
+   "P3 PUCT re-treinado (união)|PD PUCT defensor (prior heur.)": 40
+  },
+  "saida": "rl/exp/m2c_res.json"
+ },
+ "tabela": {
+  "P3 PUCT re-treinado (união)|D0 heur padrão": {
+   "n": 60,
+   "isrW": 57,
+   "egyW": 3,
+   "isr": [
+    0.95,
+    0.8629926537490016,
+    0.9828508088208587
+   ],
+   "egy": [
+    0.05,
+    0.01714919117914121,
+    0.13700734625099836
+   ],
+   "scoreISR": 0.34166666666666695,
+   "tipos": {
+    "marginal ISR": 38,
+    "parcial ISR": 19,
+    "marginal EGY": 1,
+    "decisiva EGY": 2
+   },
+   "ponte": 1,
+   "ponteViva": 0.03333333333333333,
+   "oeste0": 0.016666666666666666,
+   "oeste": 9.383333333333333,
+   "perdasISR": 3.7333333333333334,
+   "perdasEGY": 5.183333333333334,
+   "obj": 1.2833333333333334
+  },
+  "P3 PUCT re-treinado (união)|G1 GNN antigo": {
+   "n": 60,
+   "isrW": 19,
+   "egyW": 41,
+   "isr": [
+    0.31666666666666665,
+    0.21305705841174333,
+    0.4423400494301654
+   ],
+   "egy": [
+    0.6833333333333333,
+    0.5576599505698345,
+    0.7869429415882567
+   ],
+   "scoreISR": -0.13333333333333328,
+   "tipos": {
+    "marginal EGY": 38,
+    "marginal ISR": 18,
+    "decisiva EGY": 2,
+    "parcial ISR": 1,
+    "parcial EGY": 1
+   },
+   "ponte": 1,
+   "ponteViva": 0.95,
+   "oeste0": 0,
+   "oeste": 10.1,
+   "perdasISR": 3.566666666666667,
+   "perdasEGY": 5.066666666666666,
+   "obj": 0.3333333333333333
+  },
+  "P3 PUCT re-treinado (união)|G2 GNN re-treinado": {
+   "n": 60,
+   "isrW": 10,
+   "egyW": 50,
+   "isr": [
+    0.16666666666666666,
+    0.09313077201321032,
+    0.28031851497207827
+   ],
+   "egy": [
+    0.8333333333333334,
+    0.7196814850279217,
+    0.9068692279867897
+   ],
+   "scoreISR": -0.5066666666666667,
+   "tipos": {
+    "decisiva EGY": 25,
+    "marginal EGY": 22,
+    "marginal ISR": 10,
+    "parcial EGY": 3
+   },
+   "ponte": 0.9833333333333333,
+   "ponteViva": 0.9666666666666667,
+   "oeste0": 0.05,
+   "oeste": 6.333333333333333,
+   "perdasISR": 5.9,
+   "perdasEGY": 8.366666666666667,
+   "obj": 0.23333333333333334
+  },
+  "H0 heur padrão|PD PUCT defensor (prior heur.)": {
+   "n": 60,
+   "isrW": 9,
+   "egyW": 51,
+   "isr": [
+    0.15,
+    0.08097349242295689,
+    0.26114825891159615
+   ],
+   "egy": [
+    0.85,
+    0.7388517410884038,
+    0.9190265075770431
+   ],
+   "scoreISR": -0.735,
+   "tipos": {
+    "decisiva EGY": 46,
+    "parcial EGY": 5,
+    "parcial ISR": 5,
+    "marginal ISR": 3,
+    "decisiva ISR": 1
+   },
+   "ponte": 0.5333333333333333,
+   "ponteViva": 0.18333333333333332,
+   "oeste0": 0.5833333333333334,
+   "oeste": 1.65,
+   "perdasISR": 4.016666666666667,
+   "perdasEGY": 4.5,
+   "obj": 0.2833333333333333
+  },
+  "H1 heur sem exp|PD PUCT defensor (prior heur.)": {
+   "n": 60,
+   "isrW": 3,
+   "egyW": 57,
+   "isr": [
+    0.05,
+    0.01714919117914121,
+    0.13700734625099836
+   ],
+   "egy": [
+    0.95,
+    0.8629926537490016,
+    0.9828508088208587
+   ],
+   "scoreISR": -0.8850000000000001,
+   "tipos": {
+    "decisiva EGY": 52,
+    "parcial EGY": 5,
+    "decisiva ISR": 1,
+    "parcial ISR": 1,
+    "marginal ISR": 1
+   },
+   "ponte": 0.38333333333333336,
+   "ponteViva": 0.18333333333333332,
+   "oeste0": 0.7,
+   "oeste": 0.9166666666666666,
+   "perdasISR": 3.3666666666666667,
+   "perdasEGY": 2.8666666666666667,
+   "obj": 0.15
+  },
+  "HC heur CEM|PD PUCT defensor (prior heur.)": {
+   "n": 60,
+   "isrW": 3,
+   "egyW": 57,
+   "isr": [
+    0.05,
+    0.01714919117914121,
+    0.13700734625099836
+   ],
+   "egy": [
+    0.95,
+    0.8629926537490016,
+    0.9828508088208587
+   ],
+   "scoreISR": -0.8983333333333334,
+   "tipos": {
+    "decisiva EGY": 53,
+    "marginal ISR": 2,
+    "parcial ISR": 1,
+    "parcial EGY": 3,
+    "marginal EGY": 1
+   },
+   "ponte": 0.6166666666666667,
+   "ponteViva": 0.06666666666666667,
+   "oeste0": 0.4666666666666667,
+   "oeste": 1.9,
+   "perdasISR": 4.066666666666666,
+   "perdasEGY": 2.466666666666667,
+   "obj": 0.2
+  },
+  "NA MLP Fase A|PD PUCT defensor (prior heur.)": {
+   "n": 60,
+   "isrW": 13,
+   "egyW": 47,
+   "isr": [
+    0.21666666666666667,
+    0.13122921046407016,
+    0.3362026834734252
+   ],
+   "egy": [
+    0.7833333333333333,
+    0.6637973165265748,
+    0.8687707895359299
+   ],
+   "scoreISR": -0.7183333333333335,
+   "tipos": {
+    "decisiva EGY": 47,
+    "marginal ISR": 13
+   },
+   "ponte": 0.7166666666666667,
+   "ponteViva": 0.11666666666666667,
+   "oeste0": 0.6666666666666666,
+   "oeste": 1.8833333333333333,
+   "perdasISR": 4.483333333333333,
+   "perdasEGY": 2.1166666666666667,
+   "obj": 0.25
+  },
+  "N3 MLP re-treinado|PD PUCT defensor (prior heur.)": {
+   "n": 60,
+   "isrW": 25,
+   "egyW": 35,
+   "isr": [
+    0.4166666666666667,
+    0.30064086487871833,
+    0.5427214568676039
+   ],
+   "egy": [
+    0.5833333333333334,
+    0.45727854313239624,
+    0.6993591351212818
+   ],
+   "scoreISR": -0.2499999999999998,
+   "tipos": {
+    "parcial EGY": 26,
+    "decisiva EGY": 6,
+    "marginal ISR": 25,
+    "marginal EGY": 3
+   },
+   "ponte": 0.9833333333333333,
+   "ponteViva": 0.016666666666666666,
+   "oeste0": 0.03333333333333333,
+   "oeste": 6.066666666666666,
+   "perdasISR": 2.0833333333333335,
+   "perdasEGY": 3.25,
+   "obj": 0.4166666666666667
+  },
+  "P3 PUCT re-treinado (união)|PD PUCT defensor (prior heur.)": {
+   "n": 40,
+   "isrW": 31,
+   "egyW": 9,
+   "isr": [
+    0.775,
+    0.6249660359590695,
+    0.8768404674532148
+   ],
+   "egy": [
+    0.225,
+    0.1231595325467853,
+    0.3750339640409305
+   ],
+   "scoreISR": 0.06499999999999999,
+   "tipos": {
+    "decisiva EGY": 7,
+    "marginal ISR": 27,
+    "parcial EGY": 1,
+    "parcial ISR": 4,
+    "marginal EGY": 1
+   },
+   "ponte": 1,
+   "ponteViva": 0.175,
+   "oeste0": 0.025,
+   "oeste": 7.9,
+   "perdasISR": 4.4,
+   "perdasEGY": 5.35,
+   "obj": 0.9
+  },
+  "H1 heur sem exp|PDp PUCT defensor (prior pol.)": {
+   "n": 60,
+   "isrW": 3,
+   "egyW": 57,
+   "isr": [
+    0.05,
+    0.01714919117914121,
+    0.13700734625099836
+   ],
+   "egy": [
+    0.95,
+    0.8629926537490016,
+    0.9828508088208587
+   ],
+   "scoreISR": -0.8433333333333335,
+   "tipos": {
+    "decisiva EGY": 44,
+    "parcial EGY": 12,
+    "marginal ISR": 3,
+    "marginal EGY": 1
+   },
+   "ponte": 0.38333333333333336,
+   "ponteViva": 0.38333333333333336,
+   "oeste0": 0.6,
+   "oeste": 1.7666666666666666,
+   "perdasISR": 2.95,
+   "perdasEGY": 3.45,
+   "obj": 0.18333333333333332
+  },
+  "HC heur CEM|PDp PUCT defensor (prior pol.)": {
+   "n": 60,
+   "isrW": 4,
+   "egyW": 56,
+   "isr": [
+    0.06666666666666667,
+    0.02622827414319792,
+    0.15925579893767722
+   ],
+   "egy": [
+    0.9333333333333333,
+    0.8407442010623228,
+    0.973771725856802
+   ],
+   "scoreISR": -0.7300000000000001,
+   "tipos": {
+    "decisiva EGY": 33,
+    "parcial EGY": 17,
+    "marginal EGY": 6,
+    "marginal ISR": 4
+   },
+   "ponte": 0.6,
+   "ponteViva": 0.6,
+   "oeste0": 0.4,
+   "oeste": 2.7333333333333334,
+   "perdasISR": 3.033333333333333,
+   "perdasEGY": 2.6333333333333333,
+   "obj": 0.2
+  },
+  "N3 MLP re-treinado|PDp PUCT defensor (prior pol.)": {
+   "n": 60,
+   "isrW": 2,
+   "egyW": 58,
+   "isr": [
+    0.03333333333333333,
+    0.009189126490150246,
+    0.11363987528925378
+   ],
+   "egy": [
+    0.9666666666666667,
+    0.8863601247107462,
+    0.9908108735098498
+   ],
+   "scoreISR": -0.8516666666666668,
+   "tipos": {
+    "marginal ISR": 2,
+    "decisiva EGY": 46,
+    "marginal EGY": 5,
+    "parcial EGY": 7
+   },
+   "ponte": 0.6833333333333333,
+   "ponteViva": 0.3333333333333333,
+   "oeste0": 0.31666666666666665,
+   "oeste": 2.25,
+   "perdasISR": 4.083333333333333,
+   "perdasEGY": 3.85,
+   "obj": 0.05
+  }
+ },
+ "nash": null,
+ "atqs": [
+  "P3 PUCT re-treinado (união)",
+  "H0 heur padrão",
+  "H1 heur sem exp",
+  "HC heur CEM",
+  "NA MLP Fase A",
+  "N3 MLP re-treinado"
+ ],
+ "defs": [
+  "D0 heur padrão",
+  "G1 GNN antigo",
+  "G2 GNN re-treinado",
+  "PD PUCT defensor (prior heur.)",
+  "PDp PUCT defensor (prior pol.)"
+ ]
+}

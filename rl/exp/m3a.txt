@@ -1,0 +1,37 @@
+  1/3120 partidas (1s)
+  253/3120 partidas (62s)
+  444/3120 partidas (122s)
+  794/3120 partidas (182s)
+  1103/3120 partidas (243s)
+  1232/3120 partidas (303s)
+  1401/3120 partidas (363s)
+  1501/3120 partidas (424s)
+  1509/3120 partidas (484s)
+  1517/3120 partidas (544s)
+  1526/3120 partidas (606s)
+  1535/3120 partidas (667s)
+  1544/3120 partidas (729s)
+  1553/3120 partidas (810s)
+  1663/3120 partidas (870s)
+  1907/3120 partidas (930s)
+  2220/3120 partidas (990s)
+  2429/3120 partidas (1050s)
+  2630/3120 partidas (1110s)
+  2914/3120 partidas (1171s)
+  3068/3120 partidas (1232s)
+  3079/3120 partidas (1292s)
+  3090/3120 partidas (1355s)
+  3102/3120 partidas (1417s)
+  3115/3120 partidas (1478s)
+
+Israel vence (IC 95%), n por célula até 300:
+atacante \ defensor          E1 GNN PSRO              D0 heur padrão           G1 GNN antigo            G2 GNN re-treinado       DC heur CEM              PD PUCT defensor (prior heur.)
+H0 heur padrão               8.7% [6.0–12.4]          —                        —                        —                        —                        —                       
+H1 heur sem exp              14.3% [10.8–18.8]        —                        —                        —                        —                        —                       
+HC heur CEM                  0.3% [0.1–1.9]           —                        —                        —                        —                        —                       
+NA MLP Fase A                10.0% [7.1–13.9]         —                        —                        —                        —                        —                       
+N3 MLP re-treinado           9.3% [6.5–13.2]          —                        —                        —                        —                        —                       
+P3 PUCT re-treinado (união)  25.0% [15.8–37.2]        —                        —                        —                        —                        —                       
+B1 MLP PSRO                  1.7% [0.7–3.8]           0.0% [0.0–1.3]           0.0% [0.0–1.3]           0.0% [0.0–1.3]           5.3% [3.3–8.5]           0.0% [0.0–6.0]          
+
+3120 partidas em 1537s

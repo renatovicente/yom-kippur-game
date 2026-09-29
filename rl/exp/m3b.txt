@@ -1,0 +1,17 @@
+  1/1560 partidas (2s)
+  630/1560 partidas (63s)
+  1003/1560 partidas (123s)
+  1201/1560 partidas (186s)
+  1225/1560 partidas (252s)
+  1239/1560 partidas (330s)
+  1299/1560 partidas (391s)
+
+Israel vence (IC 95%), n por célula até 300:
+atacante \ defensor          D0 heur padrão           G1 GNN antigo            G2 GNN re-treinado       DC heur CEM              PD PUCT defensor (prior heur.) E1 GNN PSRO             
+HG heur CEM vs GNN           42.0% [36.6–47.7]        14.3% [10.8–18.8]        16.0% [12.3–20.6]        31.3% [26.3–36.8]        11.7% [5.8–22.2]         3.0% [1.6–5.6]          
+
+NASH da população: Israel vence 3.3% (gap 0.3 pp)
+  mistura Israel: HG heur CEM vs GNN 100%
+  mistura Egito:  PD PUCT defensor (prior heur.) 1%, E1 GNN PSRO 97%
+
+1560 partidas em 423s

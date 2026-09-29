@@ -1,0 +1,39 @@
+
+== expectimax ==
+ISR exp=on  × EGY exp=on           ISR 11.3% [9.0–14.1] | score -0.772 | ponte 35% (viva 11%) | oeste=0 73% | n=600
+ISR exp=on  × EGY exp=off          ISR 23.8% [20.6–27.4] | score -0.293 | ponte 45% (viva 30%) | oeste=0 57% | n=600
+ISR exp=off × EGY exp=on           ISR 18.3% [15.4–21.6] | score -0.639 | ponte 40% (viva 11%) | oeste=0 65% | n=600
+ISR exp=off × EGY exp=off          ISR 31.7% [28.1–35.5] | score -0.189 | ponte 45% (viva 30%) | oeste=0 56% | n=600
+
+== ponte ==
+longe do inimigo (orig.) | guarda 0 ISR 14.0% [10.5–18.4] | score -0.731 | ponte 37% (viva 13%) | oeste=0 72% | n=300
+longe do inimigo (orig.) | guarda 1 ISR 10.3% [7.4–14.3] | score -0.786 | ponte 37% (viva 14%) | oeste=0 73% | n=300
+longe do inimigo (orig.) | guarda 2 ISR 9.7% [6.8–13.5] | score -0.803 | ponte 37% (viva 14%) | oeste=0 73% | n=300
+longe do inimigo (orig.) | guarda 3 ISR 9.0% [6.3–12.8] | score -0.816 | ponte 37% (viva 14%) | oeste=0 73% | n=300
+mais perto da engenharia | guarda 0 ISR 6.0% [3.8–9.3] | score -0.766 | ponte 41% (viva 21%) | oeste=0 66% | n=300
+mais perto da engenharia | guarda 1 ISR 4.3% [2.5–7.3] | score -0.804 | ponte 41% (viva 20%) | oeste=0 66% | n=300
+mais perto da engenharia | guarda 2 ISR 5.0% [3.1–8.1] | score -0.797 | ponte 41% (viva 21%) | oeste=0 66% | n=300
+mais perto da engenharia | guarda 3 ISR 5.0% [3.1–8.1] | score -0.800 | ponte 41% (viva 22%) | oeste=0 66% | n=300
+perto dos objetivos | guarda 0     ISR 9.0% [6.3–12.8] | score -0.748 | ponte 42% (viva 24%) | oeste=0 67% | n=300
+perto dos objetivos | guarda 1     ISR 7.3% [4.9–10.9] | score -0.786 | ponte 42% (viva 24%) | oeste=0 67% | n=300
+perto dos objetivos | guarda 2     ISR 8.0% [5.4–11.6] | score -0.781 | ponte 42% (viva 26%) | oeste=0 67% | n=300
+perto dos objetivos | guarda 3     ISR 7.0% [4.6–10.5] | score -0.795 | ponte 42% (viva 25%) | oeste=0 67% | n=300
+misto | guarda 0                   ISR 9.0% [6.3–12.8] | score -0.764 | ponte 43% (viva 19%) | oeste=0 68% | n=300
+misto | guarda 1                   ISR 6.0% [3.8–9.3] | score -0.812 | ponte 43% (viva 19%) | oeste=0 68% | n=300
+misto | guarda 2                   ISR 5.7% [3.6–8.9] | score -0.819 | ponte 43% (viva 20%) | oeste=0 67% | n=300
+misto | guarda 3                   ISR 4.7% [2.8–7.7] | score -0.830 | ponte 43% (viva 20%) | oeste=0 67% | n=300
+setor norte (8-10) | guarda 0      ISR 14.0% [10.5–18.4] | score -0.681 | ponte 33% (viva 10%) | oeste=0 71% | n=300
+setor norte (8-10) | guarda 1      ISR 11.3% [8.2–15.4] | score -0.732 | ponte 33% (viva 12%) | oeste=0 71% | n=300
+setor norte (8-10) | guarda 2      ISR 9.0% [6.3–12.8] | score -0.756 | ponte 33% (viva 12%) | oeste=0 71% | n=300
+setor norte (8-10) | guarda 3      ISR 9.0% [6.3–12.8] | score -0.763 | ponte 33% (viva 12%) | oeste=0 71% | n=300
+setor centro (11-13) | guarda 0    ISR 12.0% [8.8–16.2] | score -0.746 | ponte 33% (viva 11%) | oeste=0 76% | n=300
+setor centro (11-13) | guarda 1    ISR 11.0% [7.9–15.0] | score -0.772 | ponte 33% (viva 14%) | oeste=0 76% | n=300
+setor centro (11-13) | guarda 2    ISR 9.0% [6.3–12.8] | score -0.806 | ponte 33% (viva 12%) | oeste=0 76% | n=300
+setor centro (11-13) | guarda 3    ISR 9.3% [6.5–13.2] | score -0.795 | ponte 33% (viva 12%) | oeste=0 76% | n=300
+setor sul (14-16) | guarda 0       ISR 16.3% [12.6–20.9] | score -0.692 | ponte 36% (viva 13%) | oeste=0 67% | n=300
+setor sul (14-16) | guarda 1       ISR 16.3% [12.6–20.9] | score -0.692 | ponte 36% (viva 14%) | oeste=0 67% | n=300
+setor sul (14-16) | guarda 2       ISR 13.7% [10.2–18.0] | score -0.753 | ponte 36% (viva 13%) | oeste=0 67% | n=300
+setor sul (14-16) | guarda 3       ISR 14.0% [10.5–18.4] | score -0.750 | ponte 36% (viva 14%) | oeste=0 67% | n=300
+
+10800 partidas em 618s
+DONE
