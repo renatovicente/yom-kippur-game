@@ -1,0 +1,7034 @@
+{
+"hexes": {
+"0101": "bosque",
+"0102": "aberto",
+"0103": "aberto",
+"0104": "bosque",
+"0105": "bosque",
+"0106": "bosque",
+"0107": "aberto",
+"0108": "bosque",
+"0109": "aberto",
+"0110": "dunas",
+"0111": "dunas",
+"0112": "dunas",
+"0113": "dunas",
+"0114": "dunas",
+"0115": "dunas",
+"0116": "dunas",
+"0117": "dunas",
+"0118": "dunas",
+"0119": "dunas",
+"0120": "dunas",
+"0121": "dunas",
+"0122": "dunas",
+"0201": "bosque",
+"0202": "aberto",
+"0203": "bosque",
+"0204": "bosque",
+"0205": "bosque",
+"0206": "bosque",
+"0207": "bosque",
+"0208": "bosque",
+"0209": "aberto",
+"0210": "dunas",
+"0211": "dunas",
+"0212": "dunas",
+"0213": "dunas",
+"0214": "dunas",
+"0215": "dunas",
+"0216": "dunas",
+"0217": "dunas",
+"0218": "dunas",
+"0219": "dunas",
+"0220": "dunas",
+"0221": "dunas",
+"0222": "aberto",
+"0301": "bosque",
+"0302": "bosque",
+"0303": "aberto",
+"0304": "aberto",
+"0305": "bosque",
+"0306": "bosque",
+"0307": "bosque",
+"0308": "bosque",
+"0309": "bosque",
+"0310": "aberto",
+"0311": "dunas",
+"0312": "dunas",
+"0313": "dunas",
+"0314": "dunas",
+"0315": "dunas",
+"0316": "dunas",
+"0317": "dunas",
+"0318": "dunas",
+"0319": "dunas",
+"0320": "dunas",
+"0321": "aberto",
+"0322": "aberto",
+"0401": "bosque",
+"0402": "bosque",
+"0403": "bosque",
+"0404": "aberto",
+"0405": "bosque",
+"0406": "bosque",
+"0407": "bosque",
+"0408": "bosque",
+"0409": "bosque",
+"0410": "aberto",
+"0411": "dunas",
+"0412": "dunas",
+"0413": "dunas",
+"0414": "dunas",
+"0415": "aberto",
+"0416": "dunas",
+"0417": "dunas",
+"0418": "aberto",
+"0419": "aberto",
+"0420": "aberto",
+"0421": "aberto",
+"0422": "aberto",
+"0501": "bosque",
+"0502": "bosque",
+"0503": "bosque",
+"0504": "aberto",
+"0505": "aberto",
+"0506": "bosque",
+"0507": "bosque",
+"0508": "bosque",
+"0509": "bosque",
+"0510": "bosque",
+"0511": "aberto",
+"0512": "aberto",
+"0513": "aberto",
+"0514": "dunas",
+"0515": "aberto",
+"0516": "aberto",
+"0517": "aberto",
+"0518": "aberto",
+"0519": "bosque",
+"0520": "bosque",
+"0521": "bosque",
+"0522": "aberto",
+"0601": "bosque",
+"0602": "bosque",
+"0603": "aberto",
+"0604": "aberto",
+"0605": "aberto",
+"0606": "bosque",
+"0607": "bosque",
+"0608": "bosque",
+"0609": "bosque",
+"0610": "bosque",
+"0611": "bosque",
+"0612": "bosque",
+"0613": "aberto",
+"0614": "aberto",
+"0615": "aberto",
+"0616": "aberto",
+"0617": "bosque",
+"0618": "bosque",
+"0619": "bosque",
+"0620": "bosque",
+"0621": "aberto",
+"0622": "aberto",
+"0701": "bosque",
+"0702": "bosque",
+"0703": "bosque",
+"0704": "bosque",
+"0705": "aberto",
+"0706": "aberto",
+"0707": "aberto",
+"0708": "bosque",
+"0709": "bosque",
+"0710": "bosque",
+"0711": "bosque",
+"0712": "bosque",
+"0713": "bosque",
+"0714": "aberto",
+"0715": "bosque",
+"0716": "bosque",
+"0717": "bosque",
+"0718": "bosque",
+"0719": "bosque",
+"0720": "bosque",
+"0721": "bosque",
+"0722": "cidade",
+"0801": "bosque",
+"0802": "aberto",
+"0803": "cidade",
+"0804": "aberto",
+"0805": "bosque",
+"0806": "aberto",
+"0807": "aberto",
+"0808": "aberto",
+"0809": "bosque",
+"0810": "bosque",
+"0811": "bosque",
+"0812": "bosque",
+"0813": "bosque",
+"0814": "bosque",
+"0815": "bosque",
+"0816": "aberto",
+"0817": "aberto",
+"0818": "bosque",
+"0819": "bosque",
+"0820": "agua",
+"0821": "agua",
+"0822": "aberto",
+"0901": "aberto",
+"0902": "aberto",
+"0903": "aberto",
+"0904": "agua",
+"0905": "aberto",
+"0906": "aberto",
+"0907": "bosque",
+"0908": "aberto",
+"0909": "aberto",
+"0910": "aberto",
+"0911": "bosque",
+"0912": "bosque",
+"0913": "bosque",
+"0914": "bosque",
+"0915": "bosque",
+"0916": "cidade",
+"0917": "aberto",
+"0918": "agua",
+"0919": "agua",
+"0920": "agua",
+"0921": "agua",
+"0922": "agua",
+"1001": "cidade",
+"1002": "aberto",
+"1003": "agua",
+"1004": "agua",
+"1005": "aberto",
+"1006": "aberto",
+"1007": "aberto",
+"1008": "bosque",
+"1009": "aberto",
+"1010": "aberto",
+"1011": "aberto",
+"1012": "aberto",
+"1013": "bosque",
+"1014": "aberto",
+"1015": "aberto",
+"1016": "aberto",
+"1017": "agua",
+"1018": "agua",
+"1019": "agua",
+"1020": "agua",
+"1021": "agua",
+"1022": "aberto",
+"1101": "aberto",
+"1102": "aberto",
+"1103": "agua",
+"1104": "agua",
+"1105": "agua",
+"1106": "agua",
+"1107": "aberto",
+"1108": "agua",
+"1109": "aberto",
+"1110": "aberto",
+"1111": "aberto",
+"1112": "aberto",
+"1113": "aberto",
+"1114": "aberto",
+"1115": "aberto",
+"1116": "aberto",
+"1117": "agua",
+"1118": "agua",
+"1119": "agua",
+"1120": "agua",
+"1121": "agua",
+"1122": "agua",
+"1201": "aberto",
+"1202": "aberto",
+"1203": "aberto",
+"1204": "aberto",
+"1205": "agua",
+"1206": "aberto",
+"1207": "agua",
+"1208": "aberto",
+"1209": "aberto",
+"1210": "aberto",
+"1211": "aberto",
+"1212": "aberto",
+"1213": "aberto",
+"1214": "aberto",
+"1215": "aberto",
+"1216": "cidade",
+"1217": "agua",
+"1218": "aberto",
+"1219": "agua",
+"1220": "agua",
+"1221": "agua",
+"1222": "aberto",
+"1301": "dunas",
+"1302": "dunas",
+"1303": "aberto",
+"1304": "aberto",
+"1305": "aberto",
+"1306": "aberto",
+"1307": "agua",
+"1308": "aberto",
+"1309": "aberto",
+"1310": "aberto",
+"1311": "aberto",
+"1312": "aberto",
+"1313": "aberto",
+"1314": "aberto",
+"1315": "aberto",
+"1316": "aberto",
+"1317": "agua",
+"1318": "agua",
+"1319": "agua",
+"1320": "agua",
+"1321": "agua",
+"1322": "agua",
+"1401": "dunas",
+"1402": "dunas",
+"1403": "cidade",
+"1404": "dunas",
+"1405": "dunas",
+"1406": "aberto",
+"1407": "aberto",
+"1408": "aberto",
+"1409": "dunas",
+"1410": "dunas",
+"1411": "aberto",
+"1412": "aberto",
+"1413": "aberto",
+"1414": "aberto",
+"1415": "cidade",
+"1416": "aberto",
+"1417": "agua",
+"1418": "agua",
+"1419": "agua",
+"1420": "agua",
+"1421": "agua",
+"1422": "aberto",
+"1501": "dunas",
+"1502": "dunas",
+"1503": "dunas",
+"1504": "dunas",
+"1505": "dunas",
+"1506": "dunas",
+"1507": "dunas",
+"1508": "dunas",
+"1509": "dunas",
+"1510": "dunas",
+"1511": "aberto",
+"1512": "aberto",
+"1513": "dunas",
+"1514": "dunas",
+"1515": "aberto",
+"1516": "dunas",
+"1517": "aberto",
+"1518": "aberto",
+"1519": "agua",
+"1520": "agua",
+"1521": "agua",
+"1522": "agua",
+"1601": "dunas",
+"1602": "dunas",
+"1603": "dunas",
+"1604": "dunas",
+"1605": "dunas",
+"1606": "dunas",
+"1607": "dunas",
+"1608": "dunas",
+"1609": "dunas",
+"1610": "dunas",
+"1611": "aberto",
+"1612": "dunas",
+"1613": "dunas",
+"1614": "dunas",
+"1615": "aberto",
+"1616": "dunas",
+"1617": "dunas",
+"1618": "aberto",
+"1619": "aberto",
+"1620": "agua",
+"1621": "agua",
+"1622": "aberto",
+"1701": "dunas",
+"1702": "dunas",
+"1703": "dunas",
+"1704": "dunas",
+"1705": "dunas",
+"1706": "dunas",
+"1707": "dunas",
+"1708": "dunas",
+"1709": "dunas",
+"1710": "aberto",
+"1711": "dunas",
+"1712": "aberto",
+"1713": "aberto",
+"1714": "aberto",
+"1715": "dunas",
+"1716": "dunas",
+"1717": "dunas",
+"1718": "dunas",
+"1719": "dunas",
+"1720": "aberto",
+"1721": "agua",
+"1722": "agua",
+"1801": "dunas",
+"1802": "dunas",
+"1803": "dunas",
+"1804": "dunas",
+"1805": "dunas",
+"1806": "dunas",
+"1807": "dunas",
+"1808": "dunas",
+"1809": "aberto",
+"1810": "aberto",
+"1811": "aberto",
+"1812": "dunas",
+"1813": "dunas",
+"1814": "dunas",
+"1815": "dunas",
+"1816": "dunas",
+"1817": "dunas",
+"1818": "dunas",
+"1819": "dunas",
+"1820": "aberto",
+"1821": "aberto",
+"1822": "aberto",
+"1901": "dunas",
+"1902": "dunas",
+"1903": "dunas",
+"1904": "dunas",
+"1905": "dunas",
+"1906": "dunas",
+"1907": "dunas",
+"1908": "dunas",
+"1909": "dunas",
+"1910": "dunas",
+"1911": "dunas",
+"1912": "dunas",
+"1913": "aberto",
+"1914": "aberto",
+"1915": "aberto",
+"1916": "dunas",
+"1917": "dunas",
+"1918": "dunas",
+"1919": "dunas",
+"1920": "dunas",
+"1921": "dunas",
+"1922": "dunas",
+"2001": "dunas",
+"2002": "dunas",
+"2003": "dunas",
+"2004": "dunas",
+"2005": "dunas",
+"2006": "dunas",
+"2007": "aberto",
+"2008": "aberto",
+"2009": "aberto",
+"2010": "aberto",
+"2011": "aberto",
+"2012": "aberto",
+"2013": "acidentado",
+"2014": "aberto",
+"2015": "aberto",
+"2016": "aberto",
+"2017": "aberto",
+"2018": "aberto",
+"2019": "aberto",
+"2020": "aberto",
+"2021": "aberto",
+"2022": "aberto",
+"2101": "aberto",
+"2102": "dunas",
+"2103": "aberto",
+"2104": "dunas",
+"2105": "acidentado",
+"2106": "acidentado",
+"2107": "acidentado",
+"2108": "acidentado",
+"2109": "acidentado",
+"2110": "acidentado",
+"2111": "acidentado",
+"2112": "acidentado",
+"2113": "acidentado",
+"2114": "acidentado",
+"2115": "acidentado",
+"2116": "aberto",
+"2117": "acidentado",
+"2118": "acidentado",
+"2119": "aberto",
+"2120": "acidentado",
+"2121": "acidentado",
+"2122": "aberto",
+"2201": "dunas",
+"2202": "dunas",
+"2203": "dunas",
+"2204": "dunas",
+"2205": "acidentado",
+"2206": "acidentado",
+"2207": "acidentado",
+"2208": "acidentado",
+"2209": "acidentado",
+"2210": "acidentado",
+"2211": "acidentado",
+"2212": "acidentado",
+"2213": "acidentado",
+"2214": "acidentado",
+"2215": "acidentado",
+"2216": "acidentado",
+"2217": "acidentado",
+"2218": "acidentado",
+"2219": "acidentado",
+"2220": "acidentado",
+"2221": "aberto",
+"2222": "aberto",
+"2301": "dunas",
+"2302": "dunas",
+"2303": "dunas",
+"2304": "dunas",
+"2305": "dunas",
+"2306": "acidentado",
+"2307": "acidentado",
+"2308": "acidentado",
+"2309": "aberto",
+"2310": "aberto",
+"2311": "acidentado",
+"2312": "acidentado",
+"2313": "acidentado",
+"2314": "acidentado",
+"2315": "acidentado",
+"2316": "acidentado",
+"2317": "acidentado",
+"2318": "acidentado",
+"2319": "acidentado",
+"2320": "acidentado",
+"2321": "acidentado",
+"2322": "acidentado",
+"2401": "dunas",
+"2402": "dunas",
+"2403": "dunas",
+"2404": "dunas",
+"2405": "dunas",
+"2406": "acidentado",
+"2407": "acidentado",
+"2408": "aberto",
+"2409": "dunas",
+"2410": "aberto",
+"2411": "acidentado",
+"2412": "acidentado",
+"2413": "acidentado",
+"2414": "acidentado",
+"2415": "aberto",
+"2416": "aberto",
+"2417": "aberto",
+"2418": "acidentado",
+"2419": "acidentado",
+"2420": "acidentado",
+"2421": "acidentado",
+"2422": "aberto",
+"2501": "dunas",
+"2502": "dunas",
+"2503": "dunas",
+"2504": "dunas",
+"2505": "dunas",
+"2506": "dunas",
+"2507": "dunas",
+"2508": "dunas",
+"2509": "dunas",
+"2510": "dunas",
+"2511": "aberto",
+"2512": "acidentado",
+"2513": "acidentado",
+"2514": "acidentado",
+"2515": "aberto",
+"2516": "aberto",
+"2517": "aberto",
+"2518": "aberto",
+"2519": "aberto",
+"2520": "acidentado",
+"2521": "acidentado",
+"2522": "aberto"
+},
+"feat": {
+"0101": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.42,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.0
+},
+"0102": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.01,
+"dark": 0.0,
+"yellow": 0.03,
+"brown": 0.03,
+"white": 0.26
+},
+"0103": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.47
+},
+"0104": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.54,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0105": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.56,
+"dark": 0.02,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.0
+},
+"0106": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.63,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0107": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.05,
+"brown": 0.0,
+"white": 0.63
+},
+"0108": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.51,
+"dark": 0.03,
+"yellow": 0.02,
+"brown": 0.03,
+"white": 0.0
+},
+"0109": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.78
+},
+"0110": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.85,
+"brown": 0.0,
+"white": 0.0
+},
+"0111": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.87,
+"brown": 0.0,
+"white": 0.0
+},
+"0112": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.92,
+"brown": 0.0,
+"white": 0.0
+},
+"0113": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.93,
+"brown": 0.0,
+"white": 0.0
+},
+"0114": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.08,
+"yellow": 0.6,
+"brown": 0.01,
+"white": 0.0
+},
+"0115": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.96,
+"brown": 0.0,
+"white": 0.0
+},
+"0116": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"0117": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.99,
+"brown": 0.0,
+"white": 0.0
+},
+"0118": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0119": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0120": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0121": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.43,
+"yellow": 0.48,
+"brown": 0.0,
+"white": 0.0
+},
+"0122": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0201": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.51,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.29
+},
+"0202": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.28,
+"dark": 0.04,
+"yellow": 0.04,
+"brown": 0.01,
+"white": 0.38
+},
+"0203": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.32,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.52
+},
+"0204": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.97,
+"dark": 0.04,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0205": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.04,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0206": {
+"red": 0.07,
+"blue": 0.0,
+"green": 0.59,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.17
+},
+"0207": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.66,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.0
+},
+"0208": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.77,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.12
+},
+"0209": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.13,
+"brown": 0.0,
+"white": 0.81
+},
+"0210": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.96,
+"brown": 0.0,
+"white": 0.0
+},
+"0211": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.28,
+"yellow": 0.55,
+"brown": 0.0,
+"white": 0.0
+},
+"0212": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"0213": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"0214": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.84,
+"brown": 0.02,
+"white": 0.0
+},
+"0215": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"0216": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.37,
+"yellow": 0.55,
+"brown": 0.0,
+"white": 0.0
+},
+"0217": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0218": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0219": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0220": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0221": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0222": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.03
+},
+"0301": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.87,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0302": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.57,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.23
+},
+"0303": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.26,
+"dark": 0.07,
+"yellow": 0.03,
+"brown": 0.0,
+"white": 0.51
+},
+"0304": {
+"red": 0.03,
+"blue": 0.0,
+"green": 0.24,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.55
+},
+"0305": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.67,
+"dark": 0.04,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0306": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.97,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0307": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0308": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0309": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.84,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.06
+},
+"0310": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.09,
+"brown": 0.0,
+"white": 0.84
+},
+"0311": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.96,
+"brown": 0.0,
+"white": 0.0
+},
+"0312": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"0313": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"0314": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.78,
+"brown": 0.02,
+"white": 0.0
+},
+"0315": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"0316": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.99,
+"brown": 0.0,
+"white": 0.0
+},
+"0317": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0318": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0319": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0320": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0321": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.96
+},
+"0322": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"0401": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.92,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0402": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.61,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.27
+},
+"0403": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.32,
+"dark": 0.03,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.46
+},
+"0404": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.23,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.63
+},
+"0405": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0406": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0407": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0408": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.97,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0409": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.85,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.06
+},
+"0410": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.05,
+"brown": 0.0,
+"white": 0.89
+},
+"0411": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.95,
+"brown": 0.0,
+"white": 0.0
+},
+"0412": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"0413": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"0414": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.77,
+"brown": 0.02,
+"white": 0.0
+},
+"0415": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"0416": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0417": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0418": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"0419": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"0420": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"0421": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.84
+},
+"0422": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"0501": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.92,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0502": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.94,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0503": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.37,
+"dark": 0.04,
+"yellow": 0.01,
+"brown": 0.04,
+"white": 0.11
+},
+"0504": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.01,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.77
+},
+"0505": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.19,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.65
+},
+"0506": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.97,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0507": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0508": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0509": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0510": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.9,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.04
+},
+"0511": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.04,
+"brown": 0.0,
+"white": 0.85
+},
+"0512": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.92
+},
+"0513": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.93
+},
+"0514": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.99,
+"brown": 0.0,
+"white": 0.0
+},
+"0515": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"0516": {
+"red": 0.04,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.92
+},
+"0517": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"0518": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"0519": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0520": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0521": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.96,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0522": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.5,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.12
+},
+"0601": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.97,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0602": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.96,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0603": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.26,
+"dark": 0.03,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.47
+},
+"0604": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.54
+},
+"0605": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.17,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.72
+},
+"0606": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0607": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0608": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0609": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0610": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.91,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"0611": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.72,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0612": {
+"red": 0.07,
+"blue": 0.0,
+"green": 0.74,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.01
+},
+"0613": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.64
+},
+"0614": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.01,
+"white": 0.71
+},
+"0615": {
+"red": 0.25,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.05,
+"white": 0.43
+},
+"0616": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.0,
+"white": 0.74
+},
+"0617": {
+"red": 0.14,
+"blue": 0.0,
+"green": 0.69,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0618": {
+"red": 0.14,
+"blue": 0.0,
+"green": 0.69,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0619": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.63,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0620": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.62,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.05,
+"white": 0.0
+},
+"0621": {
+"red": 0.03,
+"blue": 0.0,
+"green": 0.01,
+"dark": 0.43,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.1
+},
+"0622": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"0701": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.9,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0702": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.94,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0703": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.71,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.08
+},
+"0704": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.35,
+"dark": 0.04,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.43
+},
+"0705": {
+"red": 0.05,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.58
+},
+"0706": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.11,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.03,
+"white": 0.54
+},
+"0707": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.1,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.01,
+"white": 0.58
+},
+"0708": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.75,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0709": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.66,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0710": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.66,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0711": {
+"red": 0.14,
+"blue": 0.0,
+"green": 0.63,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0712": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.5,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.06,
+"white": 0.0
+},
+"0713": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.95,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0714": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"0715": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0716": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0717": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0718": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0719": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0720": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.68,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.0
+},
+"0721": {
+"red": 0.14,
+"blue": 0.0,
+"green": 0.6,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.04,
+"white": 0.0
+},
+"0722": {
+"red": 0.04,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.22,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.28
+},
+"0801": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.33,
+"dark": 0.32,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.03
+},
+"0802": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.26,
+"dark": 0.3,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"0803": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.04,
+"dark": 0.18,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.32
+},
+"0804": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.21,
+"dark": 0.03,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.29
+},
+"0805": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.35,
+"dark": 0.02,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.48
+},
+"0806": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.88
+},
+"0807": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.05,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.87
+},
+"0808": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.05,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.78
+},
+"0809": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.96,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0810": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.95,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0811": {
+"red": 0.04,
+"blue": 0.0,
+"green": 0.58,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.07,
+"white": 0.0
+},
+"0812": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.96,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0813": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0814": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0815": {
+"red": 0.0,
+"blue": 0.0,
+"green": 1.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0816": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"0817": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.71
+},
+"0818": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.68,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.04,
+"white": 0.0
+},
+"0819": {
+"red": 0.08,
+"blue": 0.0,
+"green": 0.75,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"0820": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0821": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0822": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.03
+},
+"0901": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.32,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.14
+},
+"0902": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.35,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.17
+},
+"0903": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.36,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.16
+},
+"0904": {
+"red": 0.0,
+"blue": 0.81,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.08
+},
+"0905": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.66
+},
+"0906": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.21,
+"dark": 0.03,
+"yellow": 0.03,
+"brown": 0.03,
+"white": 0.35
+},
+"0907": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.38,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.5
+},
+"0908": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.91
+},
+"0909": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.02,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.88
+},
+"0910": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.01,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.64
+},
+"0911": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.93,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0912": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.89,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0913": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.95,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0914": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.98,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0915": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.99,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0916": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.22,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.25
+},
+"0917": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.72
+},
+"0918": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0919": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0920": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0921": {
+"red": 0.0,
+"blue": 0.86,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"0922": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1001": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.35,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.21
+},
+"1002": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.3,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.15
+},
+"1003": {
+"red": 0.0,
+"blue": 0.89,
+"green": 0.0,
+"dark": 0.04,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1004": {
+"red": 0.0,
+"blue": 0.83,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.08
+},
+"1005": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.03,
+"white": 0.64
+},
+"1006": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.92
+},
+"1007": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.19,
+"dark": 0.02,
+"yellow": 0.05,
+"brown": 0.03,
+"white": 0.26
+},
+"1008": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.34,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.42
+},
+"1009": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.92
+},
+"1010": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.88
+},
+"1011": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.06,
+"brown": 0.06,
+"white": 0.15
+},
+"1012": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.84
+},
+"1013": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.94,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1014": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"1015": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.06,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.81
+},
+"1016": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.73
+},
+"1017": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1018": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1019": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1020": {
+"red": 0.0,
+"blue": 0.86,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1021": {
+"red": 0.0,
+"blue": 0.88,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1022": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"1101": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.37,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.04
+},
+"1102": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.35,
+"yellow": 0.03,
+"brown": 0.01,
+"white": 0.02
+},
+"1103": {
+"red": 0.0,
+"blue": 0.95,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1104": {
+"red": 0.0,
+"blue": 0.86,
+"green": 0.0,
+"dark": 0.05,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1105": {
+"red": 0.0,
+"blue": 0.9,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.04
+},
+"1106": {
+"red": 0.0,
+"blue": 0.89,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.04
+},
+"1107": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.03,
+"brown": 0.03,
+"white": 0.67
+},
+"1108": {
+"red": 0.0,
+"blue": 0.94,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1109": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.11,
+"dark": 0.02,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.52
+},
+"1110": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.16,
+"dark": 0.01,
+"yellow": 0.02,
+"brown": 0.02,
+"white": 0.44
+},
+"1111": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.02,
+"dark": 0.06,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.25
+},
+"1112": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.03,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.62
+},
+"1113": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.95
+},
+"1114": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.9
+},
+"1115": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.95
+},
+"1116": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.34
+},
+"1117": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1118": {
+"red": 0.0,
+"blue": 0.91,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1119": {
+"red": 0.0,
+"blue": 0.9,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1120": {
+"red": 0.0,
+"blue": 0.84,
+"green": 0.0,
+"dark": 0.09,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1121": {
+"red": 0.0,
+"blue": 0.86,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1122": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1201": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.22,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.06
+},
+"1202": {
+"red": 0.15,
+"blue": 0.09,
+"green": 0.0,
+"dark": 0.17,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.1
+},
+"1203": {
+"red": 0.0,
+"blue": 0.07,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.84
+},
+"1204": {
+"red": 0.0,
+"blue": 0.06,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.86
+},
+"1205": {
+"red": 0.0,
+"blue": 0.97,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1206": {
+"red": 0.0,
+"blue": 0.11,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.81
+},
+"1207": {
+"red": 0.05,
+"blue": 0.78,
+"green": 0.0,
+"dark": 0.05,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.0
+},
+"1208": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.61
+},
+"1209": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.07,
+"white": 0.71
+},
+"1210": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.67
+},
+"1211": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.07,
+"brown": 0.05,
+"white": 0.09
+},
+"1212": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.03,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.49
+},
+"1213": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.16,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.03,
+"white": 0.27
+},
+"1214": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.06,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.52
+},
+"1215": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.02,
+"white": 0.44
+},
+"1216": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.15,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.27
+},
+"1217": {
+"red": 0.0,
+"blue": 0.81,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.03
+},
+"1218": {
+"red": 0.0,
+"blue": 0.37,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.34
+},
+"1219": {
+"red": 0.0,
+"blue": 0.83,
+"green": 0.0,
+"dark": 0.03,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1220": {
+"red": 0.0,
+"blue": 0.85,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1221": {
+"red": 0.0,
+"blue": 0.85,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1222": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.01
+},
+"1301": {
+"red": 0.0,
+"blue": 0.17,
+"green": 0.01,
+"dark": 0.01,
+"yellow": 0.58,
+"brown": 0.0,
+"white": 0.02
+},
+"1302": {
+"red": 0.0,
+"blue": 0.14,
+"green": 0.01,
+"dark": 0.0,
+"yellow": 0.7,
+"brown": 0.0,
+"white": 0.0
+},
+"1303": {
+"red": 0.1,
+"blue": 0.03,
+"green": 0.0,
+"dark": 0.12,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.2
+},
+"1304": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.05,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.43
+},
+"1305": {
+"red": 0.0,
+"blue": 0.03,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.77
+},
+"1306": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.0,
+"white": 0.78
+},
+"1307": {
+"red": 0.0,
+"blue": 0.92,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1308": {
+"red": 0.0,
+"blue": 0.13,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.0,
+"white": 0.69
+},
+"1309": {
+"red": 0.0,
+"blue": 0.12,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.69
+},
+"1310": {
+"red": 0.0,
+"blue": 0.08,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.02,
+"brown": 0.0,
+"white": 0.61
+},
+"1311": {
+"red": 0.0,
+"blue": 0.05,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.02,
+"brown": 0.0,
+"white": 0.27
+},
+"1312": {
+"red": 0.0,
+"blue": 0.02,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.04,
+"brown": 0.0,
+"white": 0.25
+},
+"1313": {
+"red": 0.0,
+"blue": 0.05,
+"green": 0.0,
+"dark": 0.06,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.48
+},
+"1314": {
+"red": 0.0,
+"blue": 0.01,
+"green": 0.0,
+"dark": 0.07,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.44
+},
+"1315": {
+"red": 0.0,
+"blue": 0.02,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.78
+},
+"1316": {
+"red": 0.0,
+"blue": 0.02,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.69
+},
+"1317": {
+"red": 0.0,
+"blue": 0.96,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1318": {
+"red": 0.0,
+"blue": 0.88,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1319": {
+"red": 0.0,
+"blue": 0.88,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1320": {
+"red": 0.0,
+"blue": 0.74,
+"green": 0.0,
+"dark": 0.11,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1321": {
+"red": 0.0,
+"blue": 0.74,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.02
+},
+"1322": {
+"red": 0.0,
+"blue": 0.94,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1401": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.79,
+"brown": 0.03,
+"white": 0.0
+},
+"1402": {
+"red": 0.28,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.6,
+"brown": 0.04,
+"white": 0.01
+},
+"1403": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.18,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.22
+},
+"1404": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.94,
+"brown": 0.0,
+"white": 0.0
+},
+"1405": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"1406": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.96
+},
+"1407": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.93
+},
+"1408": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.96
+},
+"1409": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.99,
+"brown": 0.0,
+"white": 0.0
+},
+"1410": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.89,
+"brown": 0.01,
+"white": 0.0
+},
+"1411": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.03,
+"brown": 0.05,
+"white": 0.01
+},
+"1412": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.5
+},
+"1413": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.84
+},
+"1414": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.95
+},
+"1415": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.3,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.23
+},
+"1416": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.34,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.19
+},
+"1417": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1418": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1419": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1420": {
+"red": 0.0,
+"blue": 0.87,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1421": {
+"red": 0.0,
+"blue": 0.86,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1422": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.01
+},
+"1501": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"1502": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.45,
+"brown": 0.0,
+"white": 0.16
+},
+"1503": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.81,
+"brown": 0.02,
+"white": 0.0
+},
+"1504": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.85,
+"brown": 0.02,
+"white": 0.0
+},
+"1505": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1506": {
+"red": 0.2,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.75,
+"brown": 0.03,
+"white": 0.0
+},
+"1507": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.79,
+"brown": 0.03,
+"white": 0.0
+},
+"1508": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.79,
+"brown": 0.04,
+"white": 0.0
+},
+"1509": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.77,
+"brown": 0.03,
+"white": 0.0
+},
+"1510": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.88,
+"brown": 0.02,
+"white": 0.0
+},
+"1511": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.92
+},
+"1512": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.05,
+"yellow": 0.29,
+"brown": 0.0,
+"white": 0.05
+},
+"1513": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1514": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.04,
+"white": 0.0
+},
+"1515": {
+"red": 0.22,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.03,
+"white": 0.49
+},
+"1516": {
+"red": 0.06,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.93,
+"brown": 0.01,
+"white": 0.0
+},
+"1517": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.04,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.72
+},
+"1518": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"1519": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1520": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1521": {
+"red": 0.0,
+"blue": 0.9,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1522": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1601": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"1602": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.77,
+"brown": 0.03,
+"white": 0.0
+},
+"1603": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.97,
+"brown": 0.0,
+"white": 0.0
+},
+"1604": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.38,
+"brown": 0.0,
+"white": 0.19
+},
+"1605": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1606": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1607": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1608": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1609": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1610": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1611": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.19
+},
+"1612": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1613": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.04,
+"white": 0.0
+},
+"1614": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.02,
+"white": 0.0
+},
+"1615": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.27,
+"brown": 0.0,
+"white": 0.33
+},
+"1616": {
+"red": 0.14,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.83,
+"brown": 0.03,
+"white": 0.0
+},
+"1617": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.03,
+"white": 0.0
+},
+"1618": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.84
+},
+"1619": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"1620": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1621": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1622": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.01
+},
+"1701": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1702": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1703": {
+"red": 0.15,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.03,
+"white": 0.0
+},
+"1704": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1705": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.99,
+"brown": 0.0,
+"white": 0.0
+},
+"1706": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1707": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1708": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1709": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1710": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"1711": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1712": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.55
+},
+"1713": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.02,
+"white": 0.33
+},
+"1714": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.61
+},
+"1715": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1716": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1717": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1718": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1719": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.02,
+"white": 0.0
+},
+"1720": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.92
+},
+"1721": {
+"red": 0.0,
+"blue": 1.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1722": {
+"red": 0.0,
+"blue": 0.99,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1801": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.98,
+"brown": 0.0,
+"white": 0.0
+},
+"1802": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.03,
+"yellow": 0.39,
+"brown": 0.0,
+"white": 0.15
+},
+"1803": {
+"red": 0.07,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.91,
+"brown": 0.02,
+"white": 0.0
+},
+"1804": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1805": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1806": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1807": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1808": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1809": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"1810": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"1811": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.68
+},
+"1812": {
+"red": 0.15,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.81,
+"brown": 0.04,
+"white": 0.0
+},
+"1813": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1814": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1815": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1816": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1817": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1818": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1819": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1820": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.64
+},
+"1821": {
+"red": 0.09,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.8
+},
+"1822": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1901": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1902": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1903": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.77,
+"brown": 0.03,
+"white": 0.0
+},
+"1904": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1905": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.38,
+"brown": 0.0,
+"white": 0.23
+},
+"1906": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1907": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1908": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1909": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1910": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1911": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1912": {
+"red": 0.15,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.82,
+"brown": 0.04,
+"white": 0.0
+},
+"1913": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.65
+},
+"1914": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.95
+},
+"1915": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.34,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.12
+},
+"1916": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1917": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1918": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1919": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1920": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1921": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"1922": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.77,
+"brown": 0.04,
+"white": 0.0
+},
+"2001": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2002": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2003": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.79,
+"brown": 0.04,
+"white": 0.0
+},
+"2004": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.04,
+"white": 0.0
+},
+"2005": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.81,
+"brown": 0.01,
+"white": 0.0
+},
+"2006": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.81,
+"brown": 0.0,
+"white": 0.0
+},
+"2007": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.61
+},
+"2008": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.59
+},
+"2009": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.5
+},
+"2010": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.01,
+"white": 0.49
+},
+"2011": {
+"red": 0.12,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.01,
+"brown": 0.03,
+"white": 0.1
+},
+"2012": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.79
+},
+"2013": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.82,
+"white": 0.0
+},
+"2014": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.05,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.63
+},
+"2015": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"2016": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"2017": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"2018": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.95
+},
+"2019": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.88
+},
+"2020": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.96
+},
+"2021": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.96
+},
+"2022": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2101": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.03,
+"yellow": 0.34,
+"brown": 0.0,
+"white": 0.39
+},
+"2102": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2103": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.32,
+"brown": 0.0,
+"white": 0.38
+},
+"2104": {
+"red": 0.25,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.68,
+"brown": 0.05,
+"white": 0.0
+},
+"2105": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.97,
+"white": 0.0
+},
+"2106": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.93,
+"white": 0.0
+},
+"2107": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.95,
+"white": 0.0
+},
+"2108": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2109": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2110": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2111": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2112": {
+"red": 0.03,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.97,
+"white": 0.0
+},
+"2113": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.9,
+"white": 0.0
+},
+"2114": {
+"red": 0.09,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.91,
+"white": 0.0
+},
+"2115": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2116": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"2117": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2118": {
+"red": 0.26,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.74,
+"white": 0.0
+},
+"2119": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2120": {
+"red": 0.18,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.82,
+"white": 0.0
+},
+"2121": {
+"red": 0.29,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.7,
+"white": 0.0
+},
+"2122": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"2201": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2202": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2203": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2204": {
+"red": 0.15,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.8,
+"brown": 0.05,
+"white": 0.0
+},
+"2205": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.93,
+"white": 0.0
+},
+"2206": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.96,
+"white": 0.0
+},
+"2207": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2208": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2209": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2210": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2211": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.82,
+"white": 0.05
+},
+"2212": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2213": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2214": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2215": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2216": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2217": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2218": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2219": {
+"red": 0.06,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.94,
+"white": 0.0
+},
+"2220": {
+"red": 0.08,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.92,
+"white": 0.0
+},
+"2221": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.85
+},
+"2222": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2301": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2302": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2303": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2304": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2305": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.79,
+"brown": 0.04,
+"white": 0.0
+},
+"2306": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.96,
+"white": 0.0
+},
+"2307": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.97,
+"white": 0.0
+},
+"2308": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2309": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2310": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2311": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2312": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2313": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2314": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2315": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2316": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.97,
+"white": 0.0
+},
+"2317": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2318": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2319": {
+"red": 0.04,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.96,
+"white": 0.0
+},
+"2320": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2321": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.8,
+"white": 0.0
+},
+"2322": {
+"red": 0.1,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.89,
+"white": 0.0
+},
+"2401": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2402": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2403": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2404": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2405": {
+"red": 0.05,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.93,
+"brown": 0.03,
+"white": 0.0
+},
+"2406": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.99,
+"white": 0.0
+},
+"2407": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2408": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2409": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2410": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2411": {
+"red": 0.01,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.87,
+"white": 0.0
+},
+"2412": {
+"red": 0.02,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.98,
+"white": 0.0
+},
+"2413": {
+"red": 0.08,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.92,
+"white": 0.0
+},
+"2414": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 1.0,
+"white": 0.0
+},
+"2415": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2416": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"2417": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.97
+},
+"2418": {
+"red": 0.11,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.89,
+"white": 0.0
+},
+"2419": {
+"red": 0.13,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.87,
+"white": 0.0
+},
+"2420": {
+"red": 0.24,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.76,
+"white": 0.0
+},
+"2421": {
+"red": 0.19,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.8,
+"white": 0.0
+},
+"2422": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2501": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2502": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2503": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2504": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2505": {
+"red": 0.17,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.02,
+"yellow": 0.64,
+"brown": 0.04,
+"white": 0.0
+},
+"2506": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2507": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2508": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2509": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2510": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 1.0,
+"brown": 0.0,
+"white": 0.0
+},
+"2511": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.9
+},
+"2512": {
+"red": 0.03,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.97,
+"white": 0.0
+},
+"2513": {
+"red": 0.16,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.84,
+"white": 0.0
+},
+"2514": {
+"red": 0.31,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.69,
+"white": 0.0
+},
+"2515": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"2516": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"2517": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.99
+},
+"2518": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 1.0
+},
+"2519": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.0,
+"yellow": 0.0,
+"brown": 0.0,
+"white": 0.98
+},
+"2520": {
+"red": 0.33,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.66,
+"white": 0.0
+},
+"2521": {
+"red": 0.42,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.0,
+"brown": 0.57,
+"white": 0.0
+},
+"2522": {
+"red": 0.0,
+"blue": 0.0,
+"green": 0.0,
+"dark": 0.01,
+"yellow": 0.01,
+"brown": 0.0,
+"white": 0.94
+}
+},
+"edges": {
+"road": [
+[
+"0108",
+"0109"
+],
+[
+"0108",
+"0208"
+],
+[
+"0113",
+"0114"
+],
+[
+"0114",
+"0213"
+],
+[
+"0201",
+"0202"
+],
+[
+"0202",
+"0302"
+],
+[
+"0206",
+"0306"
+],
+[
+"0213",
+"0214"
+],
+[
+"0214",
+"0314"
+],
+[
+"0302",
+"0303"
+],
+[
+"0303",
+"0402"
+],
+[
+"0303",
+"0403"
+],
+[
+"0304",
+"0403"
+],
+[
+"0304",
+"0404"
+],
+[
+"0305",
+"0306"
+],
+[
+"0305",
+"0404"
+],
+[
+"0314",
+"0414"
+],
+[
+"0402",
+"0403"
+],
+[
+"0403",
+"0503"
+],
+[
+"0413",
+"0414"
+],
+[
+"0414",
+"0515"
+],
+[
+"0503",
+"0603"
+],
+[
+"0504",
+"0603"
+],
+[
+"0504",
+"0604"
+],
+[
+"0515",
+"0516"
+],
+[
+"0516",
+"0615"
+],
+[
+"0604",
+"0705"
+],
+[
+"0612",
+"0613"
+],
+[
+"0612",
+"0712"
+],
+[
+"0613",
+"0614"
+],
+[
+"0614",
+"0615"
+],
+[
+"0615",
+"0616"
+],
+[
+"0616",
+"0617"
+],
+[
+"0617",
+"0618"
+],
+[
+"0618",
+"0619"
+],
+[
+"0619",
+"0620"
+],
+[
+"0620",
+"0621"
+],
+[
+"0621",
+"0622"
+],
+[
+"0705",
+"0706"
+],
+[
+"0706",
+"0806"
+],
+[
+"0707",
+"0806"
+],
+[
+"0707",
+"0807"
+],
+[
+"0708",
+"0807"
+],
+[
+"0708",
+"0808"
+],
+[
+"0709",
+"0710"
+],
+[
+"0710",
+"0711"
+],
+[
+"0711",
+"0712"
+],
+[
+"0712",
+"0811"
+],
+[
+"0720",
+"0721"
+],
+[
+"0720",
+"0819"
+],
+[
+"0721",
+"0722"
+],
+[
+"0722",
+"0822"
+],
+[
+"0804",
+"0905"
+],
+[
+"0811",
+"0912"
+],
+[
+"0817",
+"0818"
+],
+[
+"0817",
+"0917"
+],
+[
+"0818",
+"0819"
+],
+[
+"0905",
+"1005"
+],
+[
+"0906",
+"1006"
+],
+[
+"0907",
+"1006"
+],
+[
+"0907",
+"1007"
+],
+[
+"0912",
+"1011"
+],
+[
+"0917",
+"1016"
+],
+[
+"1005",
+"1006"
+],
+[
+"1011",
+"1111"
+],
+[
+"1016",
+"1116"
+],
+[
+"1102",
+"1202"
+],
+[
+"1109",
+"1110"
+],
+[
+"1110",
+"1209"
+],
+[
+"1110",
+"1210"
+],
+[
+"1111",
+"1210"
+],
+[
+"1116",
+"1215"
+],
+[
+"1201",
+"1202"
+],
+[
+"1201",
+"1301"
+],
+[
+"1201",
+"1302"
+],
+[
+"1202",
+"1302"
+],
+[
+"1202",
+"1303"
+],
+[
+"1208",
+"1309"
+],
+[
+"1209",
+"1309"
+],
+[
+"1209",
+"1310"
+],
+[
+"1210",
+"1310"
+],
+[
+"1210",
+"1311"
+],
+[
+"1211",
+"1311"
+],
+[
+"1211",
+"1312"
+],
+[
+"1212",
+"1213"
+],
+[
+"1212",
+"1312"
+],
+[
+"1212",
+"1313"
+],
+[
+"1213",
+"1214"
+],
+[
+"1214",
+"1215"
+],
+[
+"1302",
+"1303"
+],
+[
+"1303",
+"1402"
+],
+[
+"1401",
+"1501"
+],
+[
+"1401",
+"1502"
+],
+[
+"1402",
+"1502"
+],
+[
+"1402",
+"1503"
+],
+[
+"1403",
+"1504"
+],
+[
+"1404",
+"1504"
+],
+[
+"1404",
+"1505"
+],
+[
+"1405",
+"1505"
+],
+[
+"1405",
+"1506"
+],
+[
+"1410",
+"1411"
+],
+[
+"1410",
+"1510"
+],
+[
+"1411",
+"1412"
+],
+[
+"1412",
+"1413"
+],
+[
+"1413",
+"1514"
+],
+[
+"1503",
+"1602"
+],
+[
+"1506",
+"1507"
+],
+[
+"1507",
+"1607"
+],
+[
+"1508",
+"1509"
+],
+[
+"1508",
+"1607"
+],
+[
+"1508",
+"1608"
+],
+[
+"1509",
+"1510"
+],
+[
+"1514",
+"1515"
+],
+[
+"1515",
+"1614"
+],
+[
+"1515",
+"1615"
+],
+[
+"1516",
+"1615"
+],
+[
+"1516",
+"1616"
+],
+[
+"1602",
+"1703"
+],
+[
+"1613",
+"1614"
+],
+[
+"1613",
+"1713"
+],
+[
+"1616",
+"1617"
+],
+[
+"1618",
+"1718"
+],
+[
+"1618",
+"1719"
+],
+[
+"1619",
+"1719"
+],
+[
+"1703",
+"1803"
+],
+[
+"1713",
+"1812"
+],
+[
+"1719",
+"1720"
+],
+[
+"1720",
+"1820"
+],
+[
+"1803",
+"1903"
+],
+[
+"1812",
+"1913"
+],
+[
+"1820",
+"1821"
+],
+[
+"1821",
+"1922"
+],
+[
+"1903",
+"2003"
+],
+[
+"1912",
+"1913"
+],
+[
+"1912",
+"2011"
+],
+[
+"1912",
+"2012"
+],
+[
+"1913",
+"2013"
+],
+[
+"1914",
+"2013"
+],
+[
+"2003",
+"2104"
+],
+[
+"2004",
+"2005"
+],
+[
+"2004",
+"2104"
+],
+[
+"2005",
+"2006"
+],
+[
+"2006",
+"2007"
+],
+[
+"2007",
+"2008"
+],
+[
+"2008",
+"2009"
+],
+[
+"2009",
+"2010"
+],
+[
+"2010",
+"2011"
+],
+[
+"2013",
+"2113"
+],
+[
+"2013",
+"2114"
+],
+[
+"2017",
+"2118"
+],
+[
+"2018",
+"2118"
+],
+[
+"2019",
+"2120"
+],
+[
+"2020",
+"2120"
+],
+[
+"2020",
+"2121"
+],
+[
+"2021",
+"2121"
+],
+[
+"2104",
+"2204"
+],
+[
+"2112",
+"2113"
+],
+[
+"2113",
+"2114"
+],
+[
+"2117",
+"2118"
+],
+[
+"2118",
+"2217"
+],
+[
+"2118",
+"2218"
+],
+[
+"2119",
+"2219"
+],
+[
+"2120",
+"2121"
+],
+[
+"2120",
+"2219"
+],
+[
+"2120",
+"2220"
+],
+[
+"2121",
+"2122"
+],
+[
+"2121",
+"2220"
+],
+[
+"2121",
+"2221"
+],
+[
+"2204",
+"2305"
+],
+[
+"2213",
+"2314"
+],
+[
+"2218",
+"2219"
+],
+[
+"2219",
+"2220"
+],
+[
+"2219",
+"2320"
+],
+[
+"2220",
+"2221"
+],
+[
+"2220",
+"2320"
+],
+[
+"2220",
+"2321"
+],
+[
+"2221",
+"2321"
+],
+[
+"2221",
+"2322"
+],
+[
+"2305",
+"2405"
+],
+[
+"2313",
+"2413"
+],
+[
+"2318",
+"2418"
+],
+[
+"2319",
+"2418"
+],
+[
+"2319",
+"2419"
+],
+[
+"2320",
+"2321"
+],
+[
+"2320",
+"2419"
+],
+[
+"2320",
+"2420"
+],
+[
+"2321",
+"2322"
+],
+[
+"2321",
+"2420"
+],
+[
+"2321",
+"2421"
+],
+[
+"2322",
+"2421"
+],
+[
+"2405",
+"2505"
+],
+[
+"2412",
+"2513"
+],
+[
+"2413",
+"2414"
+],
+[
+"2413",
+"2513"
+],
+[
+"2413",
+"2514"
+],
+[
+"2414",
+"2514"
+],
+[
+"2418",
+"2419"
+],
+[
+"2419",
+"2420"
+],
+[
+"2419",
+"2520"
+],
+[
+"2420",
+"2421"
+],
+[
+"2420",
+"2520"
+],
+[
+"2420",
+"2521"
+],
+[
+"2421",
+"2422"
+],
+[
+"2421",
+"2521"
+],
+[
+"2421",
+"2522"
+],
+[
+"2512",
+"2513"
+],
+[
+"2513",
+"2514"
+],
+[
+"2520",
+"2521"
+],
+[
+"2521",
+"2522"
+]
+],
+"suez": [
+[
+"1107",
+"1206"
+],
+[
+"1201",
+"1301"
+],
+[
+"1201",
+"1302"
+],
+[
+"1202",
+"1203"
+],
+[
+"1202",
+"1302"
+],
+[
+"1202",
+"1303"
+],
+[
+"1208",
+"1308"
+],
+[
+"1208",
+"1309"
+],
+[
+"1209",
+"1309"
+],
+[
+"1209",
+"1310"
+],
+[
+"1210",
+"1310"
+],
+[
+"1210",
+"1311"
+],
+[
+"1211",
+"1311"
+],
+[
+"1211",
+"1312"
+],
+[
+"1212",
+"1312"
+],
+[
+"1212",
+"1313"
+],
+[
+"1213",
+"1313"
+],
+[
+"1213",
+"1314"
+],
+[
+"1214",
+"1314"
+],
+[
+"1214",
+"1315"
+],
+[
+"1215",
+"1315"
+],
+[
+"1215",
+"1316"
+],
+[
+"1216",
+"1316"
+],
+[
+"1301",
+"1302"
+],
+[
+"1302",
+"1303"
+]
+],
+"fresh": [
+[
+"0101",
+"0201"
+],
+[
+"0102",
+"0103"
+],
+[
+"0102",
+"0202"
+],
+[
+"0104",
+"0204"
+],
+[
+"0105",
+"0204"
+],
+[
+"0105",
+"0205"
+],
+[
+"0106",
+"0205"
+],
+[
+"0106",
+"0206"
+],
+[
+"0107",
+"0108"
+],
+[
+"0108",
+"0207"
+],
+[
+"0108",
+"0208"
+],
+[
+"0201",
+"0301"
+],
+[
+"0202",
+"0303"
+],
+[
+"0203",
+"0204"
+],
+[
+"0204",
+"0205"
+],
+[
+"0204",
+"0304"
+],
+[
+"0204",
+"0305"
+],
+[
+"0205",
+"0206"
+],
+[
+"0205",
+"0305"
+],
+[
+"0205",
+"0306"
+],
+[
+"0206",
+"0306"
+],
+[
+"0206",
+"0307"
+],
+[
+"0207",
+"0208"
+],
+[
+"0207",
+"0307"
+],
+[
+"0207",
+"0308"
+],
+[
+"0208",
+"0209"
+],
+[
+"0208",
+"0308"
+],
+[
+"0208",
+"0309"
+],
+[
+"0301",
+"0302"
+],
+[
+"0301",
+"0401"
+],
+[
+"0302",
+"0401"
+],
+[
+"0302",
+"0402"
+],
+[
+"0303",
+"0304"
+],
+[
+"0303",
+"0403"
+],
+[
+"0304",
+"0305"
+],
+[
+"0305",
+"0306"
+],
+[
+"0305",
+"0404"
+],
+[
+"0305",
+"0405"
+],
+[
+"0306",
+"0307"
+],
+[
+"0306",
+"0405"
+],
+[
+"0306",
+"0406"
+],
+[
+"0307",
+"0308"
+],
+[
+"0307",
+"0406"
+],
+[
+"0307",
+"0407"
+],
+[
+"0308",
+"0407"
+],
+[
+"0308",
+"0408"
+],
+[
+"0309",
+"0408"
+],
+[
+"0309",
+"0409"
+],
+[
+"0401",
+"0402"
+],
+[
+"0402",
+"0502"
+],
+[
+"0403",
+"0404"
+],
+[
+"0403",
+"0504"
+],
+[
+"0404",
+"0405"
+],
+[
+"0405",
+"0406"
+],
+[
+"0405",
+"0505"
+],
+[
+"0406",
+"0407"
+],
+[
+"0406",
+"0506"
+],
+[
+"0406",
+"0507"
+],
+[
+"0407",
+"0408"
+],
+[
+"0407",
+"0507"
+],
+[
+"0407",
+"0508"
+],
+[
+"0409",
+"0509"
+],
+[
+"0409",
+"0510"
+],
+[
+"0501",
+"0601"
+],
+[
+"0502",
+"0503"
+],
+[
+"0502",
+"0601"
+],
+[
+"0502",
+"0602"
+],
+[
+"0503",
+"0504"
+],
+[
+"0503",
+"0602"
+],
+[
+"0504",
+"0603"
+],
+[
+"0505",
+"0506"
+],
+[
+"0506",
+"0507"
+],
+[
+"0506",
+"0606"
+],
+[
+"0507",
+"0606"
+],
+[
+"0507",
+"0607"
+],
+[
+"0508",
+"0509"
+],
+[
+"0509",
+"0510"
+],
+[
+"0509",
+"0609"
+],
+[
+"0510",
+"0610"
+],
+[
+"0601",
+"0602"
+],
+[
+"0603",
+"0604"
+],
+[
+"0603",
+"0704"
+],
+[
+"0604",
+"0704"
+],
+[
+"0609",
+"0610"
+],
+[
+"0616",
+"0716"
+],
+[
+"0617",
+"0717"
+],
+[
+"0619",
+"0720"
+],
+[
+"0620",
+"0720"
+],
+[
+"0620",
+"0721"
+],
+[
+"0621",
+"0721"
+],
+[
+"0621",
+"0722"
+],
+[
+"0622",
+"0722"
+],
+[
+"0701",
+"0801"
+],
+[
+"0702",
+"0703"
+],
+[
+"0702",
+"0801"
+],
+[
+"0702",
+"0802"
+],
+[
+"0703",
+"0704"
+],
+[
+"0703",
+"0802"
+],
+[
+"0703",
+"0803"
+],
+[
+"0704",
+"0705"
+],
+[
+"0705",
+"0804"
+],
+[
+"0705",
+"0805"
+],
+[
+"0706",
+"0805"
+],
+[
+"0714",
+"0814"
+],
+[
+"0716",
+"0717"
+],
+[
+"0716",
+"0816"
+],
+[
+"0717",
+"0817"
+],
+[
+"0718",
+"0817"
+],
+[
+"0718",
+"0818"
+],
+[
+"0719",
+"0720"
+],
+[
+"0719",
+"0818"
+],
+[
+"0719",
+"0819"
+],
+[
+"0801",
+"0802"
+],
+[
+"0805",
+"0806"
+],
+[
+"0806",
+"0906"
+],
+[
+"0806",
+"0907"
+],
+[
+"0807",
+"0907"
+],
+[
+"0814",
+"0815"
+],
+[
+"0814",
+"0914"
+],
+[
+"0814",
+"0915"
+],
+[
+"0815",
+"0816"
+],
+[
+"0815",
+"0915"
+],
+[
+"0815",
+"0916"
+],
+[
+"0816",
+"0917"
+],
+[
+"0906",
+"0907"
+],
+[
+"0907",
+"0908"
+],
+[
+"0908",
+"1007"
+],
+[
+"0908",
+"1008"
+],
+[
+"0909",
+"1008"
+],
+[
+"0914",
+"1014"
+],
+[
+"0916",
+"0917"
+],
+[
+"0916",
+"1016"
+],
+[
+"1008",
+"1009"
+],
+[
+"1009",
+"1109"
+],
+[
+"1009",
+"1110"
+],
+[
+"1010",
+"1110"
+],
+[
+"1010",
+"1111"
+],
+[
+"1011",
+"1112"
+],
+[
+"1012",
+"1112"
+],
+[
+"1015",
+"1116"
+],
+[
+"1112",
+"1113"
+],
+[
+"1113",
+"1212"
+],
+[
+"1113",
+"1213"
+],
+[
+"1114",
+"1213"
+],
+[
+"1114",
+"1214"
+],
+[
+"1115",
+"1215"
+]
+]
+}
+}

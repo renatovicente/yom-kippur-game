@@ -4,7 +4,9 @@ rl/runs/
 rl/exp/modelos/*
 !rl/exp/modelos/ISR_psro1_0080.json
 # artefatos da extração do mapa e documentação original do jogo (direitos de terceiros)
-work/
+work/*
+!work/build_mapdata.py
+!work/mapdata_raw.json
 files/
 # arquivos locais de ferramentas
 .claude/settings.local.json
