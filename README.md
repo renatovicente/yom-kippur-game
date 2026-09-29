@@ -199,8 +199,9 @@ linha de pesquisa: [`rl/RL.md`](rl/RL.md); explicação visual:
 
 ## Paper
 
-- [`paper/paper.pdf`](paper/paper.pdf) — versão em inglês, formato NeurIPS
-  (fonte em `paper/paper.tex`; compile com `tectonic paper/paper.tex`).
+- [`paper/paper.pdf`](paper/paper.pdf) — versão em inglês, no estilo oficial NeurIPS 2025
+  (`paper/neurips_2025.sty`, opção `preprint`). Fonte em `paper/paper.tex`; compile com
+  `tectonic paper/paper.tex`.
 - [`PAPER.md`](PAPER.md) — versão em português.
 
 ## Implantação na AWS

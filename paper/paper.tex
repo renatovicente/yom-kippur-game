@@ -1,23 +1,15 @@
 \documentclass{article}
 
-% ==== Estilo NeurIPS ====================================================
-% Usa o style file OFICIAL (neurips_2024.sty) se ele estiver presente nesta
-% pasta; baixe-o do site da conferência e coloque aqui. Caso contrário, recai
-% num preâmbulo que aproxima o layout NeurIPS (coluna única, 10pt, margens 1in).
+% ==== Estilo NeurIPS (arquivo oficial neurips_2025.sty, nesta pasta) ======
+% [preprint]: versão com autor, rodapé "Preprint." (não alega aceitação).
+% Para submissão anônima use \usepackage{neurips_2025}; para a versão aceita,
+% \usepackage[final]{neurips_2025}.
+% A bibliografia usa \bibitem sem ano: natbib em modo numérico.
+\PassOptionsToPackage{numbers,sort&compress}{natbib}
+\usepackage[preprint]{neurips_2025}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\IfFileExists{neurips_2024.sty}{%
-  \usepackage[preprint]{neurips_2024}%
-}{%
-  \IfFileExists{neurips_2023.sty}{\usepackage[preprint]{neurips_2023}}{%
-    \usepackage[margin=1in]{geometry}%
-    \usepackage{times}%
-    \usepackage{titlesec}%
-    \titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.6em}{}%
-    \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.6em}{}%
-    \setlength{\parskip}{0.4em}\setlength{\parindent}{0pt}%
-  }%
-}
+\usepackage{url}
 \usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{amsmath}
@@ -45,15 +37,16 @@
   fl/.style={-{Stealth[length=2mm]}, thick},
 }
 
-\title{\bfseries Reinforcement Learning in an Asymmetric, Perfect-Information
+\title{Reinforcement Learning in an Asymmetric, Perfect-Information
 Historical Wargame: The Yom Kippur War}
 
-\author{
-  \emph{Yom Kippur Digital} project \\
-  Digital reconstruction and reinforcement-learning study \\
-  \texttt{github.com/.../yom-kippur-game}
+\author{%
+  Renato Vicente \\
+  Department of Applied Mathematics \\
+  Institute of Mathematics, Statistics and Computer Science \\
+  University of S\~{a}o Paulo \\
+  Rua do Mat\~{a}o, 1010, 05508-090 S\~{a}o Paulo, SP, Brazil
 }
-\date{}
 
 \begin{document}
 \maketitle
